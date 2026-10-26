@@ -1,0 +1,2877 @@
+<!DOCTYPE html>
+<html lang="bn" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>পশ্চিমবঙ্গ লার্নার লাইসেন্স পরীক্ষা প্রস্তুতি | WB Sarathi LL Test Prep</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Hind Siliguri & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bengali: ['"Hind Siliguri"', 'sans-serif'],
+                        sans: ['"Hind Siliguri"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#162032',
+                            925: '#0c1322'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(148, 163, 184, 0.08);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(100, 116, 139, 0.35);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(100, 116, 139, 0.65);
+        }
+        /* Hide scrollbar for horizontal pill filters on mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Glassmorphism */
+        .glass-panel {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+        /* Road Sign Container Animation */
+        .road-sign-box {
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .road-sign-box:hover {
+            transform: scale(1.06);
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.96); opacity: 0.85; }
+            50% { transform: scale(1.04); opacity: 0.45; }
+            100% { transform: scale(0.96); opacity: 0.85; }
+        }
+        .timer-warning {
+            animation: pulse-ring 1s infinite;
+        }
+        /* Safe Area Bottom Padding for Mobile Sticky Nav */
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+        }
+
+        /* Fullscreen Opera Abstract Waves Background Canvas */
+        #opera-waves {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            pointer-events: none;
+            transition: background 0.4s ease;
+            /* Light mode ambient radial glow behind the waves */
+            background:
+                radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.10) 0%, transparent 50%),
+                linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f1f5f9 100%);
+        }
+
+        html.dark #opera-waves {
+            /* Opera signature dark ambient radial glow behind the waves */
+            background:
+                radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.18) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #05050a 0%, #0d0e24 50%, #070710 100%);
+        }
+
+        /* Opera One Glassmorphism Card Styling for App Surfaces */
+        .bg-white.dark\:bg-slate-850 {
+            background-color: rgba(255, 255, 255, 0.78) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        html.dark .bg-white.dark\:bg-slate-850 {
+            background-color: rgba(20, 22, 45, 0.52) !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        }
+    </style>
+</head>
+<body class="bg-transparent text-slate-800 dark:text-slate-100 min-h-screen flex flex-col pb-20 md:pb-0 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Fullscreen Opera Abstract Waves Background Canvas -->
+    <canvas id="opera-waves"></canvas>
+
+    <!-- Top Navigation Header (Compact on Mobile, Full on Desktop) -->
+    <header class="sticky top-0 z-40 glass-panel bg-white/90 dark:bg-slate-900/90 border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14 sm:h-20">
+                <!-- Brand Logo & Title -->
+                <div class="flex items-center gap-2.5 sm:gap-3 cursor-pointer min-w-0" onclick="switchTab('practice')">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 shrink-0 rounded-xl sm:rounded-2xl bg-gradient-to-br from-indigo-600 via-blue-600 to-teal-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+                        <i class="fa-solid fa-id-card-clip text-base sm:text-xl"></i>
+                    </div>
+                    <div class="truncate">
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700 dark:bg-indigo-950/90 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60">WB RTO • Sarathi</span>
+                            <span class="hidden sm:inline-block text-xs text-slate-500 dark:text-slate-400">১০০টি প্রশ্ন</span>
+                        </div>
+                        <h1 class="text-sm sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white truncate leading-tight mt-0.5">
+                            পশ্চিমবঙ্গ লার্নার লাইসেন্স প্রস্তুতি
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Tabs -->
+                <nav class="hidden md:flex items-center gap-1.5 bg-slate-200/70 dark:bg-slate-800/80 p-1.5 rounded-2xl border border-slate-300/50 dark:border-slate-700/60">
+                    <button onclick="switchTab('practice')" id="nav-practice" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>অনুশীলন (Practice)</span>
+                    </button>
+                    <button onclick="switchTab('mock')" id="nav-mock" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <span>মক টেস্ট (Mock Exam)</span>
+                    </button>
+                    <button onclick="switchTab('signs')" id="nav-signs" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                        <i class="fa-solid fa-traffic-light"></i>
+                        <span>রাস্তার চিহ্ন (Signs)</span>
+                    </button>
+                    <button onclick="switchTab('analytics')" id="nav-analytics" class="nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>ড্যাশবোর্ড (Analytics)</span>
+                    </button>
+                </nav>
+
+                <!-- Right Controls: Progress Pill & Theme Toggle -->
+                <div class="flex items-center gap-2 shrink-0">
+                    <div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 text-[11px] sm:text-xs font-semibold" title="অধ্যয়নের ধারাবাহিকতা">
+                        <i class="fa-solid fa-fire text-amber-500"></i>
+                        <span id="header-solved-count">০/১০০</span>
+                    </div>
+
+                    <button onclick="toggleTheme()" id="theme-toggle-btn" class="w-10 h-10 rounded-xl bg-slate-200/80 dark:bg-slate-800 hover:bg-slate-300/70 dark:hover:bg-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-200 transition-colors border border-slate-300/60 dark:border-slate-700 active:scale-95" aria-label="Toggle Theme" title="থিম পরিবর্তন করুন (Light/Dark Shade)">
+                        <i id="theme-icon" class="fa-solid fa-sun text-amber-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-3.5 sm:py-6">
+
+        <!-- ==========================================
+             TAB 1: PRACTICE MODE (অনুশীলন মোড)
+             ========================================== -->
+        <section id="tab-practice" class="space-y-4 sm:space-y-6">
+            <!-- Top Filter & Search Bar (Compact & Mobile-First) -->
+            <div class="bg-white dark:bg-slate-850 rounded-2xl p-3 sm:p-5 shadow-sm border border-slate-200/80 dark:border-slate-800 flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+                <!-- Horizontally Scrollable Category Filter Pills -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar snap-x snap-mandatory -mx-1 px-1 py-0.5">
+                    <button onclick="filterPractice('ALL')" data-cat="ALL" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-sm">
+                        সব প্রশ্ন (১০০)
+                    </button>
+                    <button onclick="filterPractice('MANDATORY')" data-cat="MANDATORY" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <span class="inline-block w-2 h-2 rounded-full bg-rose-500 mr-1"></span> বাধ্যতামূলক (২৫)
+                    </button>
+                    <button onclick="filterPractice('CAUTIONARY')" data-cat="CAUTIONARY" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <span class="inline-block w-2 h-2 rounded-full bg-amber-500 mr-1"></span> সতর্কতামূলক (২৫)
+                    </button>
+                    <button onclick="filterPractice('INFORMATORY')" data-cat="INFORMATORY" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <span class="inline-block w-2 h-2 rounded-full bg-sky-500 mr-1"></span> তথ্যমূলক (১৫)
+                    </button>
+                    <button onclick="filterPractice('RULES')" data-cat="RULES" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1"></span> ট্রাফিক নিয়ম (৩৫)
+                    </button>
+                    <button onclick="filterPractice('BOOKMARKED')" data-cat="BOOKMARKED" class="cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <i class="fa-solid fa-bookmark text-amber-500 mr-1"></i> বুকমার্ক (<span id="bookmark-count-pill">০</span>)
+                    </button>
+                </div>
+
+                <!-- Search (font-size >= 16px on mobile to prevent iOS auto-zoom) & View Mode Switcher -->
+                <div class="flex items-center gap-2">
+                    <div class="relative flex-1 lg:w-60">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input type="text" id="practice-search" oninput="handleSearchPractice(this.value)" placeholder="প্রশ্ন বা চিহ্ন খুঁজুন..." class="w-full pl-9 pr-3 py-2 min-h-[42px] rounded-xl text-base sm:text-sm bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <!-- Mobile Question Grid Drawer Trigger -->
+                    <button onclick="openMobilePaletteDrawer()" class="lg:hidden min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/70 flex items-center gap-1.5 shrink-0" title="প্রশ্ন নেভিগেটর">
+                        <i class="fa-solid fa-table-cells"></i>
+                        <span class="hidden xs:inline">সূচি</span>
+                    </button>
+                    <button onclick="togglePracticeViewMode()" id="view-mode-btn" class="min-h-[42px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5 whitespace-nowrap shrink-0" title="একক কার্ড বা সম্পূর্ণ তালিকা দেখুন">
+                        <i class="fa-solid fa-layer-group text-indigo-500"></i>
+                        <span id="view-mode-label">তালিকা ভিউ</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Single-Card Practice View -->
+            <div id="practice-single-view" class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                <!-- Left 8 Cols: Active Question Card (Swipe Enabled) -->
+                <div class="lg:col-span-8 space-y-4">
+                    <div id="practice-swipe-card" class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm border border-slate-200/90 dark:border-slate-800 relative overflow-hidden">
+                        <!-- Top Question Meta -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100 dark:border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <span id="pq-number-badge" class="px-2.5 sm:px-3 py-1 rounded-xl text-xs font-bold bg-indigo-600 text-white">প্রশ্ন #১</span>
+                                <span id="pq-category-badge" class="px-2.5 sm:px-3 py-1 rounded-xl text-[11px] sm:text-xs font-semibold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20">বাধ্যতামূলক চিহ্ন</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span id="pq-status-badge" class="text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500">উত্তর দেওয়া হয়নি</span>
+                                <button onclick="toggleBookmarkCurrent()" id="pq-bookmark-btn" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-amber-500/10 text-slate-400 hover:text-amber-500 flex items-center justify-center transition-colors active:scale-95" title="বুকমার্ক করুন">
+                                    <i class="fa-regular fa-bookmark text-base"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question Text & Optional Visual Sign Diagram -->
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mb-5">
+                            <!-- Dynamic Road Sign Container (Properly scaled for mobile) -->
+                            <div id="pq-sign-wrapper" class="hidden shrink-0 flex flex-col items-center justify-center p-3 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-inner w-32 h-32 sm:w-40 sm:h-40">
+                                <div id="pq-sign-svg" class="road-sign-box w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center"></div>
+                                <span class="text-[10px] sm:text-[11px] text-slate-400 dark:text-slate-500 mt-1 font-medium">ট্রাফিক চিহ্ন</span>
+                            </div>
+
+                            <!-- Question Title & Subtitle -->
+                            <div class="flex-1 text-center sm:text-left">
+                                <h2 id="pq-question-bn" class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white leading-snug mb-1.5">
+                                    এই ট্রাফিক চিহ্নটি কী নির্দেশ করে?
+                                </h2>
+                                <p id="pq-question-en" class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
+                                    What does this traffic sign indicate?
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Options Grid -->
+                        <div id="pq-options-container" class="grid grid-cols-1 gap-2.5 sm:gap-3 mb-5">
+                            <!-- Populated by JS -->
+                        </div>
+
+                        <!-- Instant Explanation Box -->
+                        <div id="pq-explanation-box" class="hidden rounded-2xl p-3.5 sm:p-5 bg-indigo-50/90 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800/70 mb-5">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-lightbulb text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-indigo-950 dark:text-indigo-200 mb-1">ব্যাখ্যা (Explanation):</h4>
+                                    <p id="pq-explanation-text" class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thumb-Friendly Bottom Action Bar (Min 48px Touch Targets on Mobile) -->
+                        <div class="grid grid-cols-3 sm:flex items-center justify-between gap-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <button onclick="prevPracticeQuestion()" id="pq-prev-btn" class="min-h-[48px] px-3 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center gap-1.5 sm:gap-2 transition-all active:scale-95 disabled:opacity-40">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <span>পূর্ববর্তী</span>
+                            </button>
+
+                            <button onclick="revealCurrentAnswer()" id="pq-hint-btn" class="min-h-[48px] px-2.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/20 flex items-center justify-center gap-1.5 transition-all active:scale-95">
+                                <i class="fa-regular fa-eye"></i>
+                                <span>উত্তর দেখুন</span>
+                            </button>
+
+                            <button onclick="nextPracticeQuestion()" id="pq-next-btn" class="min-h-[48px] px-3 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-500 text-white shadow-sm shadow-indigo-500/20 flex items-center justify-center gap-1.5 sm:gap-2 transition-all active:scale-95 disabled:opacity-40">
+                                <span>পরবর্তী</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Mobile Swipe Hint -->
+                        <div class="mt-3 text-center sm:hidden">
+                            <span class="text-[11px] text-slate-400 dark:text-slate-500"><i class="fa-solid fa-arrows-left-right mr-1"></i>ডানে বা বামে সোয়াইপ করে প্রশ্ন পরিবর্তন করুন</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 4 Cols: Question Navigator Palette -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-4 sm:p-5 shadow-sm border border-slate-200/90 dark:border-slate-800">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                                <i class="fa-solid fa-table-cells text-indigo-500"></i>
+                                <span>প্রশ্ন নেভিগেটর</span>
+                            </h3>
+                            <span id="navigator-count-label" class="text-xs font-semibold text-slate-500 dark:text-slate-400">১০০টি প্রশ্ন</span>
+                        </div>
+
+                        <!-- Legend -->
+                        <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400 mb-3.5 pb-3 border-b border-slate-100 dark:border-slate-800">
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-emerald-500 inline-block"></span> সঠিক (<span id="legend-correct">০</span>)</span>
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-rose-500 inline-block"></span> ভুল (<span id="legend-wrong">০</span>)</span>
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-amber-400 inline-block"></span> বুকমার্ক</span>
+                        </div>
+
+                        <!-- Question Grid Buttons -->
+                        <div id="question-palette-grid" class="grid grid-cols-6 sm:grid-cols-8 lg:grid-cols-5 gap-2 max-h-64 sm:max-h-80 overflow-y-auto pr-1">
+                            <!-- Populated by JS -->
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+                            <button onclick="resetPracticeProgress()" class="min-h-[36px] text-xs font-semibold text-rose-500 hover:text-rose-600 flex items-center gap-1">
+                                <i class="fa-solid fa-rotate-left"></i> অনুশীলন রিসেট করুন
+                            </button>
+                            <button onclick="switchTab('mock')" class="min-h-[36px] text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1">
+                                মক টেস্ট দিন <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Questions List View (Toggled via View Mode button) -->
+            <div id="practice-list-view" class="hidden space-y-3.5 sm:space-y-4">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- ==========================================
+             TAB 2: MOCK EXAM MODE (মক টেস্ট)
+             ========================================== -->
+        <section id="tab-mock" class="hidden space-y-4 sm:space-y-6">
+            <!-- Mock Setup Lobby -->
+            <div id="mock-lobby" class="max-w-3xl mx-auto bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-5 sm:p-10 shadow-sm border border-slate-200/90 dark:border-slate-800 text-center">
+                <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20 flex items-center justify-center mx-auto mb-3 sm:mb-4 text-2xl sm:text-3xl">
+                    <i class="fa-solid fa-laptop-file"></i>
+                </div>
+                <span class="text-[11px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">Sarathi Parivahan WB RTO Standard</span>
+                <h2 class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white mt-3 mb-2">
+                    পশ্চিমবঙ্গ লার্নার লাইসেন্স (LL) মক টেস্ট
+                </h2>
+                <p class="text-xs sm:text-base text-slate-600 dark:text-slate-400 max-w-xl mx-auto mb-6 sm:mb-8">
+                    আসল RTO কম্পিউটারাইজড পরীক্ষার মতো পরিবেশে নিজের প্রস্তুতি যাচাই করুন। প্রতিটি প্রশ্নের জন্য ৩০ সেকেন্ড সময় থাকবে এবং পাস করতে ন্যূনতম ৬০% (১২/২০) নম্বর পেতে হবে।
+                </p>
+
+                <!-- Exam Mode Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4 mb-6 sm:mb-8 text-left">
+                    <div onclick="selectMockMode(20)" id="mock-mode-20" class="cursor-pointer p-4 sm:p-5 rounded-2xl border-2 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/30 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-indigo-600 text-white">RTO স্ট্যান্ডার্ড</span>
+                            <i class="fa-solid fa-circle-check text-indigo-600 dark:text-indigo-400 text-lg"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">২০টি প্রশ্নের র‍্যান্ডম টেস্ট</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">পাস নম্বর: ১২/২০ (৬০%) • সময়: প্রশ্ন প্রতি ৩০ সেকেন্ড</p>
+                    </div>
+
+                    <div onclick="selectMockMode(100)" id="mock-mode-100" class="cursor-pointer p-4 sm:p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700/80 hover:border-indigo-400 transition-all">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">সম্পূর্ণ প্রশ্নব্যাংক</span>
+                            <i class="fa-regular fa-circle text-slate-400 text-lg"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white">১০০টি প্রশ্নের ম্যারাথন টেস্ট</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">পাস নম্বর: ৬০/১০০ (৬০%) • সব বিভাগের সম্পূর্ণ রিভিশন</p>
+                    </div>
+                </div>
+
+                <button onclick="startMockExam()" class="w-full sm:w-auto min-h-[52px] px-8 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold text-base shadow-lg shadow-indigo-600/25 flex items-center justify-center gap-3 mx-auto transition-all active:scale-95">
+                    <i class="fa-solid fa-play"></i>
+                    <span>মক টেস্ট শুরু করুন (Start Exam)</span>
+                </button>
+            </div>
+
+            <!-- Active Mock Test Runner -->
+            <div id="mock-active" class="hidden max-w-4xl mx-auto space-y-3.5 sm:space-y-5">
+                <!-- Exam Top Status Bar -->
+                <div class="bg-white dark:bg-slate-850 rounded-2xl p-3.5 sm:p-5 shadow-sm border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <span id="mock-q-counter" class="px-3 py-1.5 rounded-xl bg-indigo-600 text-white text-xs sm:text-sm font-bold whitespace-nowrap">প্রশ্ন ১ / ২০</span>
+                        <span id="mock-cat-badge" class="hidden sm:inline-block text-xs font-semibold px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">বাধ্যতামূলক চিহ্ন</span>
+                    </div>
+
+                    <!-- 30s Question Timer -->
+                    <div class="flex items-center gap-2">
+                        <div id="mock-timer-badge" class="flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-bold text-xs sm:text-sm">
+                            <i class="fa-regular fa-clock"></i>
+                            <span id="mock-timer-text">৩০ সেকেন্ড</span>
+                        </div>
+                        <button onclick="finishMockExam()" class="min-h-[38px] px-3 py-1.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold transition-colors">
+                            জমা দিন
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                    <div id="mock-progress-bar" class="h-full bg-indigo-600 transition-all duration-300" style="width: 5%"></div>
+                </div>
+
+                <!-- Question Card -->
+                <div class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-800">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mb-5">
+                        <div id="mock-sign-wrapper" class="hidden shrink-0 flex flex-col items-center justify-center p-3 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 w-32 h-32 sm:w-40 sm:h-40">
+                            <div id="mock-sign-svg" class="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center"></div>
+                        </div>
+                        <div class="flex-1 text-center sm:text-left">
+                            <h3 id="mock-q-bn" class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white leading-snug mb-1.5"></h3>
+                            <p id="mock-q-en" class="text-xs sm:text-sm text-slate-500 dark:text-slate-400"></p>
+                        </div>
+                    </div>
+
+                    <div id="mock-options-list" class="grid grid-cols-1 gap-2.5 sm:gap-3 mb-5"></div>
+
+                    <!-- Thumb-Friendly Action Bar for Mock Exam -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4 border-t border-slate-100 dark:border-slate-800">
+                        <span class="text-xs text-center sm:text-left text-slate-400">সঠিক উত্তর নির্বাচন করে পরবর্তী প্রশ্নে যান</span>
+                        <button onclick="nextMockQuestion()" id="mock-next-btn" class="min-h-[48px] px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all">
+                            <span>পরবর্তী প্রশ্ন</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Exam Result Report -->
+            <div id="mock-result" class="hidden max-w-4xl mx-auto space-y-5">
+                <div class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-800 text-center">
+                    <div id="mock-result-badge" class="w-16 h-16 sm:w-20 sm:h-20 rounded-3xl mx-auto flex items-center justify-center text-3xl sm:text-4xl mb-3 sm:mb-4"></div>
+                    <h2 id="mock-result-title" class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-1"></h2>
+                    <p id="mock-result-subtitle" class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-5 sm:mb-6"></p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 max-w-2xl mx-auto mb-6">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                            <div class="text-xs text-slate-500">প্রাপ্ত নম্বর</div>
+                            <div id="res-score" class="text-xl sm:text-2xl font-bold text-indigo-600 dark:text-indigo-400 mt-1">0/20</div>
+                        </div>
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                            <div class="text-xs text-slate-500">শতাংশ (Accuracy)</div>
+                            <div id="res-percent" class="text-xl sm:text-2xl font-bold text-emerald-600 dark:text-emerald-400 mt-1">0%</div>
+                        </div>
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                            <div class="text-xs text-slate-500">সঠিক উত্তর</div>
+                            <div id="res-correct" class="text-xl sm:text-2xl font-bold text-emerald-500 mt-1">0</div>
+                        </div>
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800">
+                            <div class="text-xs text-slate-500">ভুল / ছেড়ে দেওয়া</div>
+                            <div id="res-wrong" class="text-xl sm:text-2xl font-bold text-rose-500 mt-1">0</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+                        <button onclick="resetToMockLobby()" class="min-h-[48px] px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-rotate-right"></i> আবার পরীক্ষা দিন
+                        </button>
+                        <button onclick="switchTab('analytics')" class="min-h-[48px] px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-chart-line"></i> ড্যাশবোর্ড দেখুন
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Detailed Answer Sheet Review -->
+                <div class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-800">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-clipboard-check text-indigo-500"></i>
+                        <span>উত্তরপত্র পর্যালোচনা (Detailed Review)</span>
+                    </h3>
+                    <div id="mock-review-list" class="space-y-3.5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             TAB 3: ROAD SIGNS GALLERY (রাস্তার চিহ্ন গ্যালারি)
+             ========================================== -->
+        <section id="tab-signs" class="hidden space-y-4 sm:space-y-6">
+            <div class="bg-white dark:bg-slate-850 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm border border-slate-200/90 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-3.5">
+                <div>
+                    <h2 class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white">ভারতীয় ট্রাফিক ও রাস্তার চিহ্ন গ্যালারি</h2>
+                    <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                        যেকোনো চিহ্নে ট্যাপ করে সরাসরি সেই চিহ্নের প্রশ্ন অনুশীলন করুন। লাল বৃত্ত = বাধ্যতামূলক, লাল ত্রিভুজ = সতর্কতামূলক, নীল আয়তক্ষেত্র = তথ্যমূলক।
+                    </p>
+                </div>
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar snap-x -mx-1 px-1 py-0.5">
+                    <button onclick="filterSignsGallery('ALL')" data-sg="ALL" class="sg-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white">সব চিহ্ন (৬৫)</button>
+                    <button onclick="filterSignsGallery('MANDATORY')" data-sg="MANDATORY" class="sg-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">বাধ্যতামূলক (২৫)</button>
+                    <button onclick="filterSignsGallery('CAUTIONARY')" data-sg="CAUTIONARY" class="sg-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">সতর্কতামূলক (২৫)</button>
+                    <button onclick="filterSignsGallery('INFORMATORY')" data-sg="INFORMATORY" class="sg-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">তথ্যমূলক (১৫)</button>
+                </div>
+            </div>
+
+            <div id="signs-gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <!-- ==========================================
+             TAB 4: PERFORMANCE ANALYTICS DASHBOARD
+             ========================================== -->
+        <section id="tab-analytics" class="hidden space-y-4 sm:space-y-6">
+            <!-- Top KPI Summary Cards -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                        <span class="text-[11px] sm:text-xs font-semibold">মোট অনুশীলন</span>
+                        <i class="fa-solid fa-list-check text-indigo-500"></i>
+                    </div>
+                    <div id="stat-total-practiced" class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white">০ / ১০০</div>
+                    <div class="text-[11px] sm:text-xs text-slate-500 mt-1">প্রশ্নব্যাংক অগ্রগতি</div>
+                </div>
+
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                        <span class="text-[11px] sm:text-xs font-semibold">সঠিকতার হার</span>
+                        <i class="fa-solid fa-bullseye text-emerald-500"></i>
+                    </div>
+                    <div id="stat-accuracy-rate" class="text-xl sm:text-3xl font-bold text-emerald-600 dark:text-emerald-400">০%</div>
+                    <div class="text-[11px] sm:text-xs text-slate-500 mt-1">পাস নম্বর ৬০%</div>
+                </div>
+
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                        <span class="text-[11px] sm:text-xs font-semibold">সম্পন্ন মক টেস্ট</span>
+                        <i class="fa-solid fa-trophy text-amber-500"></i>
+                    </div>
+                    <div id="stat-mock-count" class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white">০</div>
+                    <div id="stat-mock-pass-label" class="text-[11px] sm:text-xs text-slate-500 mt-1 truncate">গড় স্কোর: ০%</div>
+                </div>
+
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                    <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                        <span class="text-[11px] sm:text-xs font-semibold">বুকমার্ক প্রশ্ন</span>
+                        <i class="fa-solid fa-bookmark text-rose-500"></i>
+                    </div>
+                    <div id="stat-bookmarked" class="text-xl sm:text-3xl font-bold text-slate-900 dark:text-white">০</div>
+                    <button onclick="filterPractice('BOOKMARKED'); switchTab('practice');" class="text-[11px] sm:text-xs text-indigo-600 dark:text-indigo-400 font-semibold mt-1 hover:underline">রিভিশন করুন →</button>
+                </div>
+            </div>
+
+            <!-- Charts Row (Responsive without Horizontal Overflow) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm min-w-0">
+                    <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3.5 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-column text-indigo-500"></i>
+                        <span>বিভাগ অনুযায়ী পারফরম্যান্স (%)</span>
+                    </h3>
+                    <div class="h-56 sm:h-64 w-full relative">
+                        <canvas id="categoryBarChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-slate-850 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm min-w-0">
+                    <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-3.5 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-line text-emerald-500"></i>
+                        <span>মক টেস্ট স্কোর ইতিহাস (%)</span>
+                    </h3>
+                    <div class="h-56 sm:h-64 w-full relative">
+                        <canvas id="mockHistoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weak Areas & Reset Controls -->
+            <div class="bg-white dark:bg-slate-850 p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+                <div>
+                    <h4 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">পরামর্শ ও দুর্বল ক্ষেত্র (Study Recommendation)</h4>
+                    <p id="study-recommendation-text" class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                        আপনার দুর্বল বিভাগগুলো চিহ্নিত করতে কমপক্ষে ১০টি প্রশ্ন অনুশীলন করুন অথবা একটি মক টেস্ট দিন।
+                    </p>
+                </div>
+                <button onclick="clearAllStorageData()" class="min-h-[44px] px-4 py-2.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold shrink-0">
+                    সব ডেটা মুছে ফেলুন (Reset Stats)
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mobile Slide-Up Question Palette Bottom Sheet (< 1024px) -->
+    <div id="mobile-palette-drawer" class="fixed inset-0 z-50 hidden">
+        <div onclick="closeMobilePaletteDrawer()" class="absolute inset-0 bg-slate-950/60 backdrop-blur-xs"></div>
+        <div class="absolute bottom-0 inset-x-0 bg-white dark:bg-slate-900 rounded-t-3xl p-5 max-h-[75vh] flex flex-col shadow-2xl border-t border-slate-200 dark:border-slate-800">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100 dark:border-slate-800">
+                <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-table-cells text-indigo-500"></i>
+                    <span>প্রশ্ন নেভিগেটর সূচি</span>
+                </h3>
+                <button onclick="closeMobilePaletteDrawer()" class="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div id="mobile-palette-grid" class="grid grid-cols-6 sm:grid-cols-8 gap-2 overflow-y-auto py-1 pr-1">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Bottom Navigation Bar on Mobile Screens (< 768px) with >= 48px Touch Targets -->
+    <nav class="md:hidden fixed bottom-0 inset-x-0 z-40 glass-panel bg-white/95 dark:bg-slate-900/95 border-t border-slate-200/90 dark:border-slate-800/90 shadow-lg pb-safe">
+        <div class="grid grid-cols-4 gap-1 px-2 py-1">
+            <button onclick="switchTab('practice')" id="mob-nav-practice" class="mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/80 dark:bg-indigo-950/50 transition-all">
+                <i class="fa-solid fa-book-open-reader text-base mb-0.5"></i>
+                <span class="text-[11px]">অনুশীলন</span>
+            </button>
+            <button onclick="switchTab('mock')" id="mob-nav-mock" class="mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 transition-all">
+                <i class="fa-solid fa-stopwatch text-base mb-0.5"></i>
+                <span class="text-[11px]">মক টেস্ট</span>
+            </button>
+            <button onclick="switchTab('signs')" id="mob-nav-signs" class="mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 transition-all">
+                <i class="fa-solid fa-traffic-light text-base mb-0.5"></i>
+                <span class="text-[11px]">চিহ্ন গ্যালারি</span>
+            </button>
+            <button onclick="switchTab('analytics')" id="mob-nav-analytics" class="mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 transition-all">
+                <i class="fa-solid fa-chart-pie text-base mb-0.5"></i>
+                <span class="text-[11px]">ড্যাশবোর্ড</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-slate-900/60 py-5 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left text-xs text-slate-500 dark:text-slate-400">
+            <div>পশ্চিমবঙ্গ পরিবহন দপ্তর (WB Parivahan Sarathi) লার্নার লাইসেন্স (LL) পরীক্ষার সিলেবাস অনুযায়ী নির্মিত।</div>
+            <div class="flex items-center gap-3">
+                <span>১০০টি প্রশ্ন • ৬৫টি ভিজ্যুয়াল চিহ্ন</span>
+                <span>•</span>
+                <span>মোটর ভেহিকেলস আইন (MV Act)</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT: ROAD SIGNS SVG GENERATOR & 100 QUESTIONS BANK
+         ========================================== -->
+    <script>
+        /**
+         * Pure SVG & HTML/CSS Road Sign Generator
+         * Generates crisp, authentic Indian Road Congress (IRC) style traffic signs:
+         * - MANDATORY: Red circular border (or octagon for STOP, inverted triangle for GIVE WAY, blue circle for compulsory)
+         * - CAUTIONARY: Red triangular border with white background and black symbol
+         * - INFORMATORY: Blue rectangular square with white inner box and symbol
+         */
+        function renderRoadSignSVG(signCode) {
+            if (!signCode) return '';
+
+            // Helper wrappers
+            const redCircle = (inner, slash = false) => `
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                    <circle cx="50" cy="50" r="44" fill="#ffffff" stroke="#e11d48" stroke-width="10"/>
+                    ${inner}
+                    ${slash ? '<line x1="20" y1="20" x2="80" y2="80" stroke="#e11d48" stroke-width="9" stroke-linecap="round"/>' : ''}
+                </svg>`;
+
+            const blueCircle = (inner) => `
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                    <circle cx="50" cy="50" r="45" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+                    ${inner}
+                </svg>`;
+
+            const redTriangle = (inner) => `
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                    <polygon points="50,8 93,86 7,86" fill="#ffffff" stroke="#e11d48" stroke-width="9" stroke-linejoin="round"/>
+                    ${inner}
+                </svg>`;
+
+            const blueSquare = (inner, headerText = '') => `
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                    <rect x="8" y="8" width="84" height="84" rx="10" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+                    <rect x="18" y="18" width="64" height="64" rx="6" fill="#ffffff"/>
+                    ${inner}
+                </svg>`;
+
+            switch (signCode) {
+                // --- 25 MANDATORY SIGNS ---
+                case 'M_STOP':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <polygon points="32,6 68,6 94,32 94,68 68,94 32,94 6,68 6,32" fill="#e11d48" stroke="#ffffff" stroke-width="4"/>
+                        <text x="50" y="58" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="900" font-family="Inter, sans-serif">STOP</text>
+                    </svg>`;
+                case 'M_GIVE_WAY':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <polygon points="8,14 92,14 50,90" fill="#ffffff" stroke="#e11d48" stroke-width="10" stroke-linejoin="round"/>
+                        <text x="50" y="42" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="800">GIVE WAY</text>
+                    </svg>`;
+                case 'M_NO_ENTRY':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <circle cx="50" cy="50" r="44" fill="#e11d48" stroke="#ffffff" stroke-width="3"/>
+                        <rect x="20" y="42" width="60" height="16" rx="2" fill="#ffffff"/>
+                    </svg>`;
+                case 'M_ONE_WAY':
+                    return redCircle(`
+                        <path d="M38 72 L38 32 M38 32 L28 42 M38 32 L48 42" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <path d="M62 28 L62 68 M62 68 L52 58 M62 68 L72 58" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <line x1="52" y1="28" x2="72" y2="68" stroke="#e11d48" stroke-width="6"/>
+                    `, false);
+                case 'M_BOTH_WAY_PROHIBITED':
+                    return redCircle(`
+                        <path d="M38 70 L38 32 M38 32 L30 40 M38 32 L46 40" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+                        <path d="M62 30 L62 68 M62 68 L54 60 M62 68 L70 60" stroke="#0f172a" stroke-width="5" stroke-linecap="round" fill="none"/>
+                    `, true);
+                case 'M_NO_LEFT':
+                    return redCircle(`
+                        <path d="M60 72 L60 44 Q60 34 50 34 L30 34 M30 34 L40 25 M30 34 L40 43" stroke="#0f172a" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    `, true);
+                case 'M_NO_RIGHT':
+                    return redCircle(`
+                        <path d="M40 72 L40 44 Q40 34 50 34 L70 34 M70 34 L60 25 M70 34 L60 43" stroke="#0f172a" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    `, true);
+                case 'M_NO_UTURN':
+                    return redCircle(`
+                        <path d="M64 70 L64 42 A14 14 0 0 0 36 42 L36 62 M36 62 L27 52 M36 62 L45 52" stroke="#0f172a" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    `, true);
+                case 'M_NO_OVERTAKING':
+                    return redCircle(`
+                        <rect x="25" y="48" width="20" height="16" rx="3" fill="#0f172a"/>
+                        <rect x="53" y="48" width="20" height="16" rx="3" fill="#e11d48"/>
+                        <path d="M63 44 C63 30, 35 30, 35 42" stroke="#e11d48" stroke-width="4" fill="none"/>
+                    `, true);
+                case 'M_NO_HORN':
+                    return redCircle(`
+                        <path d="M26 46 L38 46 L58 32 L58 68 L38 54 L26 54 Z" fill="#0f172a"/>
+                        <path d="M65 40 Q74 50 65 60" stroke="#0f172a" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    `, true);
+                case 'M_NO_PARKING':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <circle cx="50" cy="50" r="44" fill="#0284c7" stroke="#e11d48" stroke-width="10"/>
+                        <text x="50" y="66" text-anchor="middle" fill="#ffffff" font-size="46" font-weight="900">P</text>
+                        <line x1="20" y1="20" x2="80" y2="80" stroke="#e11d48" stroke-width="9" stroke-linecap="round"/>
+                    </svg>`;
+                case 'M_NO_STOPPING':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <circle cx="50" cy="50" r="44" fill="#0284c7" stroke="#e11d48" stroke-width="10"/>
+                        <line x1="20" y1="20" x2="80" y2="80" stroke="#e11d48" stroke-width="9"/>
+                        <line x1="80" y1="20" x2="20" y2="80" stroke="#e11d48" stroke-width="9"/>
+                    </svg>`;
+                case 'M_SPEED_50':
+                    return redCircle(`<text x="50" y="65" text-anchor="middle" fill="#0f172a" font-size="42" font-weight="900">50</text>`, false);
+                case 'M_WIDTH_2M':
+                    return redCircle(`
+                        <polygon points="14,50 24,42 24,58" fill="#0f172a"/>
+                        <polygon points="86,50 76,42 76,58" fill="#0f172a"/>
+                        <text x="50" y="58" text-anchor="middle" fill="#0f172a" font-size="24" font-weight="900">2m</text>
+                    `, false);
+                case 'M_HEIGHT_3_5M':
+                    return redCircle(`
+                        <polygon points="50,14 42,24 58,24" fill="#0f172a"/>
+                        <polygon points="50,86 42,76 58,76" fill="#0f172a"/>
+                        <text x="50" y="57" text-anchor="middle" fill="#0f172a" font-size="21" font-weight="900">3.5m</text>
+                    `, false);
+                case 'M_LENGTH_10M':
+                    return redCircle(`
+                        <rect x="26" y="36" width="48" height="16" rx="2" fill="#0f172a"/>
+                        <text x="50" y="72" text-anchor="middle" fill="#0f172a" font-size="18" font-weight="900">10m</text>
+                    `, false);
+                case 'M_LOAD_5T':
+                    return redCircle(`<text x="50" y="62" text-anchor="middle" fill="#0f172a" font-size="34" font-weight="900">5T</text>`, false);
+                case 'M_AXLE_4T':
+                    return redCircle(`
+                        <line x1="26" y1="62" x2="74" y2="62" stroke="#0f172a" stroke-width="5"/>
+                        <circle cx="30" cy="62" r="7" fill="#0f172a"/>
+                        <circle cx="70" cy="62" r="7" fill="#0f172a"/>
+                        <text x="50" y="46" text-anchor="middle" fill="#0f172a" font-size="22" font-weight="900">4T</text>
+                    `, false);
+                case 'M_RESTRICTION_ENDS':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <circle cx="50" cy="50" r="44" fill="#ffffff" stroke="#0f172a" stroke-width="5"/>
+                        <line x1="22" y1="78" x2="78" y2="22" stroke="#0f172a" stroke-width="12"/>
+                    </svg>`;
+                case 'M_COMP_LEFT':
+                    return blueCircle(`<path d="M68 50 L30 50 M30 50 L44 36 M30 50 L44 64" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'M_COMP_AHEAD':
+                    return blueCircle(`<path d="M50 74 L50 26 M50 26 L36 40 M50 26 L64 40" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'M_COMP_RIGHT_AHEAD':
+                    return blueCircle(`<path d="M42 74 L42 44 L68 44 M68 44 L56 32 M68 44 L56 56" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'M_COMP_AHEAD_OR_RIGHT':
+                    return blueCircle(`
+                        <path d="M44 74 L44 26 M44 26 L34 36 M44 26 L54 36" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M44 50 L72 50 M72 50 L62 40 M72 50 L62 60" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    `);
+                case 'M_COMP_KEEP_LEFT':
+                    return blueCircle(`<path d="M64 30 L34 68 M34 68 L34 50 M34 68 L52 68" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'M_COMP_CYCLE':
+                    return blueCircle(`
+                        <circle cx="34" cy="60" r="10" stroke="#ffffff" stroke-width="4" fill="none"/>
+                        <circle cx="66" cy="60" r="10" stroke="#ffffff" stroke-width="4" fill="none"/>
+                        <path d="M34 60 L48 42 L66 60 M48 42 L44 34 M58 42 L66 60" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    `);
+
+                // --- 25 CAUTIONARY SIGNS ---
+                case 'C_RIGHT_CURVE':
+                    return redTriangle(`<path d="M42 78 L42 54 Q42 38 64 38 M64 38 L55 31 M64 38 L55 45" stroke="#0f172a" stroke-width="6" fill="none" stroke-linecap="round"/>`);
+                case 'C_LEFT_CURVE':
+                    return redTriangle(`<path d="M58 78 L58 54 Q58 38 36 38 M36 38 L45 31 M36 38 L45 45" stroke="#0f172a" stroke-width="6" fill="none" stroke-linecap="round"/>`);
+                case 'C_RIGHT_HAIRPIN':
+                    return redTriangle(`<path d="M38 78 L38 46 A10 10 0 0 1 58 46 L58 74 M58 74 L52 66 M58 74 L64 66" stroke="#0f172a" stroke-width="5.5" fill="none" stroke-linecap="round"/>`);
+                case 'C_LEFT_HAIRPIN':
+                    return redTriangle(`<path d="M62 78 L62 46 A10 10 0 0 0 42 46 L42 74 M42 74 L36 66 M42 74 L48 66" stroke="#0f172a" stroke-width="5.5" fill="none" stroke-linecap="round"/>`);
+                case 'C_RIGHT_REVERSE_BEND':
+                    return redTriangle(`<path d="M42 78 L42 60 L58 50 L58 34 M58 34 L52 40 M58 34 L64 40" stroke="#0f172a" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'C_LEFT_REVERSE_BEND':
+                    return redTriangle(`<path d="M58 78 L58 60 L42 50 L42 34 M42 34 L36 40 M42 34 L48 40" stroke="#0f172a" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`);
+                case 'C_STEEP_ASCENT':
+                    return redTriangle(`
+                        <polygon points="22,78 78,78 78,42" fill="#0f172a"/>
+                        <path d="M30 62 L62 42" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+                    `);
+                case 'C_STEEP_DESCENT':
+                    return redTriangle(`
+                        <polygon points="22,78 78,78 22,42" fill="#0f172a"/>
+                    `);
+                case 'C_NARROW_ROAD':
+                    return redTriangle(`
+                        <path d="M34 78 L34 62 L43 50 L43 36" stroke="#0f172a" stroke-width="5" fill="none"/>
+                        <path d="M66 78 L66 62 L57 50 L57 36" stroke="#0f172a" stroke-width="5" fill="none"/>
+                    `);
+                case 'C_ROAD_WIDENS':
+                    return redTriangle(`
+                        <path d="M43 78 L43 62 L34 48 L34 36" stroke="#0f172a" stroke-width="5" fill="none"/>
+                        <path d="M57 78 L57 62 L66 48 L66 36" stroke="#0f172a" stroke-width="5" fill="none"/>
+                    `);
+                case 'C_NARROW_BRIDGE':
+                    return redTriangle(`
+                        <path d="M34 78 L42 60 L42 48 L34 34" stroke="#0f172a" stroke-width="5" fill="none"/>
+                        <path d="M66 78 L58 60 L58 48 L66 34" stroke="#0f172a" stroke-width="5" fill="none"/>
+                    `);
+                case 'C_SLIPPERY_ROAD':
+                    return redTriangle(`
+                        <rect x="38" y="42" width="24" height="14" rx="3" fill="#0f172a"/>
+                        <path d="M36 60 Q50 68 40 76 M60 60 Q70 68 56 76" stroke="#0f172a" stroke-width="4" fill="none"/>
+                    `);
+                case 'C_LOOSE_GRAVEL':
+                    return redTriangle(`
+                        <rect x="32" y="54" width="22" height="14" rx="2" fill="#0f172a"/>
+                        <circle cx="64" cy="52" r="2.5" fill="#0f172a"/>
+                        <circle cx="70" cy="60" r="2.5" fill="#0f172a"/>
+                        <circle cx="62" cy="66" r="2.5" fill="#0f172a"/>
+                    `);
+                case 'C_CYCLE_CROSSING':
+                    return redTriangle(`
+                        <circle cx="39" cy="66" r="7" stroke="#0f172a" stroke-width="3.5" fill="none"/>
+                        <circle cx="61" cy="66" r="7" stroke="#0f172a" stroke-width="3.5" fill="none"/>
+                        <path d="M39 66 L49 52 L61 66 M49 52 L46 46" stroke="#0f172a" stroke-width="3.5" fill="none"/>
+                    `);
+                case 'C_PEDESTRIAN_CROSSING':
+                    return redTriangle(`
+                        <circle cx="50" cy="42" r="4.5" fill="#0f172a"/>
+                        <path d="M50 47 L50 62 L41 75 M50 62 L59 75 M41 54 L59 54" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+                    `);
+                case 'C_SCHOOL_AHEAD':
+                    return redTriangle(`
+                        <circle cx="44" cy="44" r="4" fill="#0f172a"/>
+                        <path d="M44 49 L44 64 L38 75 M44 64 L50 75" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="58" cy="50" r="3.5" fill="#0f172a"/>
+                        <path d="M58 54 L58 66 L54 75 M58 66 L63 75" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+                    `);
+                case 'C_MEN_AT_WORK':
+                    return redTriangle(`
+                        <circle cx="44" cy="44" r="4" fill="#0f172a"/>
+                        <path d="M44 49 L40 64 L35 76 M40 64 L48 76 M42 54 L56 66" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+                        <polygon points="54,76 68,76 61,64" fill="#0f172a"/>
+                    `);
+                case 'C_CATTLE':
+                    return redTriangle(`
+                        <rect x="36" y="54" width="26" height="12" rx="3" fill="#0f172a"/>
+                        <rect x="58" y="48" width="10" height="9" rx="2" fill="#0f172a"/>
+                        <line x1="39" y1="66" x2="39" y2="76" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="59" y1="66" x2="59" y2="76" stroke="#0f172a" stroke-width="4"/>
+                    `);
+                case 'C_FALLING_ROCKS':
+                    return redTriangle(`
+                        <polygon points="24,78 48,40 48,78" fill="#0f172a"/>
+                        <circle cx="56" cy="58" r="3.5" fill="#0f172a"/>
+                        <circle cx="64" cy="68" r="4" fill="#0f172a"/>
+                        <circle cx="55" cy="73" r="3" fill="#0f172a"/>
+                    `);
+                case 'C_CROSS_ROAD':
+                    return redTriangle(`
+                        <line x1="36" y1="46" x2="64" y2="74" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="64" y1="46" x2="36" y2="74" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+                    `);
+                case 'C_GAP_IN_MEDIAN':
+                    return redTriangle(`
+                        <rect x="46" y="34" width="8" height="16" fill="#0f172a"/>
+                        <rect x="46" y="62" width="8" height="16" fill="#0f172a"/>
+                        <path d="M36 56 L64 56" stroke="#0f172a" stroke-width="4" stroke-dasharray="3,3"/>
+                    `);
+                case 'C_SIDE_ROAD_LEFT':
+                    return redTriangle(`
+                        <line x1="54" y1="38" x2="54" y2="78" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="54" y1="58" x2="36" y2="58" stroke="#0f172a" stroke-width="6" stroke-linecap="round"/>
+                    `);
+                case 'C_Y_INTERSECTION':
+                    return redTriangle(`
+                        <path d="M50 78 L50 56 L36 40 M50 56 L64 40" stroke="#0f172a" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    `);
+                case 'C_ROUNDABOUT':
+                    return redTriangle(`
+                        <path d="M50 44 A14 14 0 1 1 36 58" stroke="#0f172a" stroke-width="5.5" fill="none" stroke-linecap="round"/>
+                        <polygon points="36,52 31,61 42,61" fill="#0f172a"/>
+                    `);
+                case 'C_GUARDED_RAILWAY':
+                    return redTriangle(`
+                        <line x1="30" y1="54" x2="70" y2="54" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="30" y1="72" x2="70" y2="72" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="36" y1="48" x2="36" y2="78" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="50" y1="48" x2="50" y2="78" stroke="#0f172a" stroke-width="4"/>
+                        <line x1="64" y1="48" x2="64" y2="78" stroke="#0f172a" stroke-width="4"/>
+                    `);
+
+                // --- 15 INFORMATORY SIGNS ---
+                case 'I_PETROL_PUMP':
+                    return blueSquare(`
+                        <rect x="34" y="30" width="24" height="42" rx="3" fill="#0f172a"/>
+                        <rect x="38" y="35" width="16" height="12" fill="#ffffff"/>
+                        <path d="M58 42 L66 48 L66 66" stroke="#0f172a" stroke-width="4" fill="none"/>
+                    `);
+                case 'I_HOSPITAL':
+                    return blueSquare(`
+                        <rect x="26" y="54" width="48" height="14" fill="#0f172a"/>
+                        <rect x="26" y="44" width="12" height="28" fill="#0f172a"/>
+                        <path d="M50 24 L50 42 M41 33 L59 33" stroke="#e11d48" stroke-width="6" stroke-linecap="round"/>
+                    `);
+                case 'I_FIRST_AID':
+                    return blueSquare(`
+                        <path d="M50 28 L50 72 M28 50 L72 50" stroke="#e11d48" stroke-width="14" stroke-linecap="round"/>
+                    `);
+                case 'I_EATING_PLACE':
+                    return blueSquare(`
+                        <path d="M38 28 L38 72 M33 28 L33 44 M43 28 L43 44" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M62 28 C54 28, 54 48, 62 48 L62 72" stroke="#0f172a" stroke-width="5" fill="none" stroke-linecap="round"/>
+                    `);
+                case 'I_LIGHT_REFRESHMENT':
+                    return blueSquare(`
+                        <path d="M30 40 L60 40 L56 66 L34 66 Z" fill="#0f172a"/>
+                        <path d="M60 44 A8 8 0 0 1 60 60" stroke="#0f172a" stroke-width="4" fill="none"/>
+                        <line x1="26" y1="70" x2="66" y2="70" stroke="#0f172a" stroke-width="4"/>
+                    `);
+                case 'I_RESTING_PLACE':
+                    return blueSquare(`
+                        <rect x="26" y="54" width="48" height="10" fill="#0f172a"/>
+                        <rect x="26" y="40" width="8" height="32" fill="#0f172a"/>
+                        <rect x="66" y="48" width="8" height="24" fill="#0f172a"/>
+                    `);
+                case 'I_NO_THROUGH_ROAD':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <rect x="8" y="8" width="84" height="84" rx="10" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+                        <rect x="43" y="34" width="14" height="48" fill="#ffffff"/>
+                        <rect x="26" y="22" width="48" height="14" fill="#e11d48" stroke="#ffffff" stroke-width="2"/>
+                    </svg>`;
+                case 'I_NO_THROUGH_SIDE_ROAD':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <rect x="8" y="8" width="84" height="84" rx="10" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+                        <rect x="34" y="20" width="12" height="60" fill="#ffffff"/>
+                        <rect x="46" y="44" width="24" height="12" fill="#ffffff"/>
+                        <rect x="68" y="34" width="10" height="32" fill="#e11d48"/>
+                    </svg>`;
+                case 'I_PARK_THIS_SIDE':
+                    return `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
+                        <rect x="8" y="8" width="84" height="84" rx="10" fill="#0284c7" stroke="#ffffff" stroke-width="3"/>
+                        <text x="50" y="68" text-anchor="middle" fill="#ffffff" font-size="56" font-weight="900">P</text>
+                    </svg>`;
+                case 'I_PARKING_SCOOTER':
+                    return blueSquare(`
+                        <text x="50" y="46" text-anchor="middle" fill="#0284c7" font-size="24" font-weight="900">P</text>
+                        <circle cx="36" cy="66" r="6" fill="#0f172a"/>
+                        <circle cx="64" cy="66" r="6" fill="#0f172a"/>
+                        <path d="M36 66 L50 66 L60 52" stroke="#0f172a" stroke-width="4" fill="none"/>
+                    `);
+                case 'I_PARKING_AUTO':
+                    return blueSquare(`
+                        <text x="50" y="44" text-anchor="middle" fill="#0284c7" font-size="22" font-weight="900">P</text>
+                        <rect x="34" y="50" width="32" height="16" rx="4" fill="#0f172a"/>
+                        <circle cx="38" cy="68" r="5" fill="#0f172a"/>
+                        <circle cx="62" cy="68" r="5" fill="#0f172a"/>
+                    `);
+                case 'I_PUBLIC_TELEPHONE':
+                    return blueSquare(`
+                        <path d="M36 30 C28 38, 28 62, 36 70 L44 64 L40 56 L40 44 L44 36 Z" fill="#0f172a"/>
+                    `);
+                case 'I_REPAIR_FACILITY':
+                    return blueSquare(`
+                        <path d="M36 66 L62 40 M56 32 A10 10 0 0 1 68 44" stroke="#0f172a" stroke-width="7" stroke-linecap="round" fill="none"/>
+                    `);
+                case 'I_PEDESTRIAN_SUBWAY':
+                    return blueSquare(`
+                        <path d="M26 68 L42 68 L42 56 L54 56 L54 44 L70 44" stroke="#0f172a" stroke-width="5" fill="none"/>
+                        <circle cx="46" cy="34" r="4" fill="#0f172a"/>
+                    `);
+                case 'I_BUS_STOP':
+                    return blueSquare(`
+                        <rect x="30" y="34" width="40" height="28" rx="4" fill="#0f172a"/>
+                        <rect x="34" y="38" width="32" height="12" fill="#ffffff"/>
+                        <circle cx="38" cy="66" r="5" fill="#0f172a"/>
+                        <circle cx="62" cy="66" r="5" fill="#0f172a"/>
+                    `);
+                default:
+                    return '';
+            }
+        }
+
+        /**
+         * Complete 100 Questions Bank for West Bengal Sarathi Parivahan LL Exam in Bengali
+         * Categories:
+         * - MANDATORY (25 questions: IDs 1-25)
+         * - CAUTIONARY (25 questions: IDs 26-50)
+         * - INFORMATORY (15 questions: IDs 51-65)
+         * - RULES (35 questions: IDs 66-100)
+         */
+        const QUESTIONS_BANK = [
+            // ================= 1-25: MANDATORY / REGULATORY SIGNS (বাধ্যতামূলক চিহ্ন) =================
+            {
+                id: 1, category: 'MANDATORY', signCode: 'M_STOP', signNameBn: 'থামুন (Stop)',
+                qBn: 'প্রদর্শিত অষ্টভুজাকৃতি ট্রাফিক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this octagonal traffic sign indicate?',
+                options: ['থামুন (Stop)', 'রাস্তা দিন (Give Way)', 'প্রবেশ নিষেধ (No Entry)', 'পার্কিং নিষেধ (No Parking)'],
+                ans: 0,
+                exp: 'লাল অষ্টভুজাকৃতি "STOP" চিহ্নটি একটি বাধ্যতামূলক চিহ্ন। এটি দেখলে চালককে অবশ্যই স্টপ লাইনের আগে গাড়ি সম্পূর্ণ থামাতে হবে এবং রাস্তা নিরাপদ হলে এগোতে হবে।'
+            },
+            {
+                id: 2, category: 'MANDATORY', signCode: 'M_GIVE_WAY', signNameBn: 'রাস্তা দিন (Give Way)',
+                qBn: 'উল্টানো লাল ত্রিভুজাকৃতি এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this inverted red triangle sign mean?',
+                options: ['সামনে বিপদ', 'রাস্তা দিন (Give Way)', 'একমুখী রাস্তা', 'ওভারটেকিং নিষেধ'],
+                ans: 1,
+                exp: 'উল্টানো ত্রিভুজটি "রাস্তা দিন" (Give Way) নির্দেশ করে। প্রধান রাস্তার যানবাহনকে আগে যাওয়ার অগ্রাধিকার দিতে হবে।'
+            },
+            {
+                id: 3, category: 'MANDATORY', signCode: 'M_NO_ENTRY', signNameBn: 'প্রবেশ নিষেধ (No Entry)',
+                qBn: 'এই ট্রাফিক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this traffic sign represent?',
+                options: ['সর্বপ্রকার যান চলাচল বন্ধ', 'প্রবেশ নিষেধ (No Entry)', 'গাড়ি দাঁড় করানো নিষেধ', 'সামনে রাস্তা বন্ধ'],
+                ans: 1,
+                exp: 'লাল বৃত্তের মাঝে সাদা অনুভূমিক দাগ বা কাটা চিহ্ন "প্রবেশ নিষেধ" (No Entry) নির্দেশ করে। এই রাস্তায় কোনো যানবাহন প্রবেশ করতে পারবে না।'
+            },
+            {
+                id: 4, category: 'MANDATORY', signCode: 'M_ONE_WAY', signNameBn: 'একমুখী রাস্তা (One Way)',
+                qBn: 'এই চিহ্নটি কোন ধরনের ট্রাফিক নিয়ম নির্দেশ করে?',
+                qEn: 'Which traffic regulation is indicated by this sign?',
+                options: ['উভয় দিকে যান চলাচল নিষেধ', 'একমুখী রাস্তা (One Way)', 'সোজা যাওয়া বাধ্যতামূলক', 'ওভারটেকিং অনুমোদিত'],
+                ans: 1,
+                exp: 'একটি তীর খোলা এবং বিপরীত তীরটি কাটা থাকার অর্থ হলো এটি একটি "একমুখী রাস্তা" (One Way)। শুধুমাত্র নির্দেশিত দিকেই গাড়ি চালানো যাবে।'
+            },
+            {
+                id: 5, category: 'MANDATORY', signCode: 'M_BOTH_WAY_PROHIBITED', signNameBn: 'উভয় দিকে যান চলাচল নিষেধ',
+                qBn: 'প্রদর্শিত চিহ্নটির সঠিক অর্থ কী?',
+                qEn: 'What is the correct meaning of the displayed sign?',
+                options: ['একমুখী রাস্তা', 'উভয় দিকে যান চলাচল নিষেধ (Vehicles prohibited in both directions)', 'ইউ-টার্ন নিষেধ', 'সামনে সংকীর্ণ রাস্তা'],
+                ans: 1,
+                exp: 'উভয় দিকের তীর চিহ্ন লাল দাগ দিয়ে কাটা থাকলে বোঝায় ওই রাস্তায় উভয় দিক থেকেই যানবাহন চলাচল সম্পূর্ণ নিষিদ্ধ।'
+            },
+            {
+                id: 6, category: 'MANDATORY', signCode: 'M_NO_LEFT', signNameBn: 'বাম দিকে মোড় নিষেধ',
+                qBn: 'এই বাধ্যতামূলক চিহ্নটি চালককে কী করতে নিষেধ করে?',
+                qEn: 'What does this mandatory sign prohibit the driver from doing?',
+                options: ['ডান দিকে মোড় নেওয়া', 'বাম দিকে মোড় নেওয়া (Left Turn Prohibited)', 'বাম দিকে গাড়ি পার্ক করা', 'ইউ-টার্ন নেওয়া'],
+                ans: 1,
+                exp: 'বামমুখী বাঁকানো তীরটি লাল রেখা দিয়ে কাটা থাকার অর্থ হলো এখানে বাম দিকে মোড় নেওয়া নিষেধ।'
+            },
+            {
+                id: 7, category: 'MANDATORY', signCode: 'M_NO_RIGHT', signNameBn: 'ডান দিকে মোড় নিষেধ',
+                qBn: 'এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this road sign indicate?',
+                options: ['ডান দিকে মোড় নিষেধ (Right Turn Prohibited)', 'ডান দিকে তীব্র বাঁক', 'ডান দিকে যাওয়া বাধ্যতামূলক', 'ডান দিক থেকে রাস্তা মিশেছে'],
+                ans: 0,
+                exp: 'ডানমুখী তীর লাল দাগ দিয়ে কাটা থাকার অর্থ হলো ওই স্থানে ডান দিকে মোড় নেওয়া সম্পূর্ণ নিষেধ।'
+            },
+            {
+                id: 8, category: 'MANDATORY', signCode: 'M_NO_UTURN', signNameBn: 'ইউ-টার্ন নিষেধ (No U-Turn)',
+                qBn: 'প্রদর্শিত ট্রাফিক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does the shown traffic sign signify?',
+                options: ['সামনে চুলের কাঁটার মতো বাঁক', 'ইউ-টার্ন নিষেধ (U-Turn Prohibited)', 'ডান দিকে মোড় নিষেধ', 'গোলচত্বর'],
+                ans: 1,
+                exp: 'ইংরেজি U আকৃতির তীরটি কাটা থাকলে বোঝায় ওই রাস্তায় গাড়ি ঘুরিয়ে বিপরীত দিকে ফেরা বা ইউ-টার্ন নেওয়া নিষেধ।'
+            },
+            {
+                id: 9, category: 'MANDATORY', signCode: 'M_NO_OVERTAKING', signNameBn: 'ওভারটেকিং নিষেধ',
+                qBn: 'রাস্তার পাশে এই চিহ্নটি থাকলে চালকের কী করা উচিত?',
+                qEn: 'What should a driver do when seeing this sign on the roadside?',
+                options: ['গতি বাড়ানো উচিত', 'ওভারটেকিং করা নিষেধ (Overtaking Prohibited)', 'পাশাপাশি দুটি গাড়ি চালানো যাবে', 'শুধুমাত্র বাম দিক দিয়ে ওভারটেক করা যাবে'],
+                ans: 1,
+                exp: 'এই চিহ্নটি নির্দেশ করে যে সামনের গাড়িটিকে ওভারটেক করা বা অতিক্রম করা আইনত নিষিদ্ধ ও বিপজ্জনক।'
+            },
+            {
+                id: 10, category: 'MANDATORY', signCode: 'M_NO_HORN', signNameBn: 'হর্ন বাজানো নিষেধ (Horn Prohibited)',
+                qBn: 'হাসপাতাল বা স্কুলের কাছে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign placed near hospitals or schools mean?',
+                options: ['হর্ন বাজানো বাধ্যতামূলক', 'হর্ন বাজানো নিষেধ (Horn Prohibited)', 'শব্দ দূষণ পরীক্ষা কেন্দ্র', 'সামনে পুলিশ চৌকি'],
+                ans: 1,
+                exp: 'নীরবতা অঞ্চল (Silence Zone) যেমন হাসপাতাল, আদালত বা শিক্ষাপ্রতিষ্ঠানের সামনে এই চিহ্ন থাকে, যার অর্থ হর্ন বাজানো নিষেধ।'
+            },
+            {
+                id: 11, category: 'MANDATORY', signCode: 'M_NO_PARKING', signNameBn: 'পার্কিং নিষেধ (No Parking)',
+                qBn: 'এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this traffic sign indicate?',
+                options: ['পার্কিং করার স্থান', 'পার্কিং নিষেধ (No Parking)', 'গাড়ি থামানো ও দাঁড় করানো নিষেধ', 'পুলিশ চেকপোস্ট'],
+                ans: 1,
+                exp: 'নীল বৃত্তের ওপর লাল বর্ডার ও একটি তির্যক লাল দাগ (বা P কাটা) "পার্কিং নিষেধ" (No Parking) নির্দেশ করে।'
+            },
+            {
+                id: 12, category: 'MANDATORY', signCode: 'M_NO_STOPPING', signNameBn: 'থামা বা দাঁড়ানো নিষেধ (No Stopping)',
+                qBn: 'নীল বৃত্তে দুটি আড়াআড়ি লাল দাগ (X) থাকা চিহ্নটির অর্থ কী?',
+                qEn: 'What does a blue circle with two crossed diagonal red bars mean?',
+                options: ['পার্কিং নিষেধ', 'গাড়ি থামানো বা দাঁড় করানো নিষেধ (No Stopping or Standing)', 'সামনে চৌরাস্তা', 'সব নিষেধাজ্ঞা সমাপ্ত'],
+                ans: 1,
+                exp: 'এই চিহ্নটির অর্থ "No Stopping or Standing" — অর্থাৎ এই স্থানে মুহূর্তের জন্যও গাড়ি থামানো বা দাঁড় করানো নিষেধ।'
+            },
+            {
+                id: 13, category: 'MANDATORY', signCode: 'M_SPEED_50', signNameBn: 'গতিসীমা ৫০ কিমি/ঘণ্টা',
+                qBn: 'লাল বৃত্তের মধ্যে "50" লেখা চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does the sign with "50" inside a red circle indicate?',
+                options: ['ন্যূনতম গতি ৫০ কিমি/ঘণ্টা', 'সর্বোচ্চ গতিসীমা ৫০ কিমি/ঘণ্টা (Speed Limit 50 km/h)', 'জাতীয় সড়ক নং ৫০', 'সামনে ৫০ মিটার দূরে সেতু'],
+                ans: 1,
+                exp: 'এটি সর্বোচ্চ গতিসীমা নির্দেশক বাধ্যতামূলক চিহ্ন। গাড়ি ঘণ্টায় ৫০ কিলোমিটারের বেশি গতিতে চালানো যাবে না।'
+            },
+            {
+                id: 14, category: 'MANDATORY', signCode: 'M_WIDTH_2M', signNameBn: 'প্রস্থ সীমা ২ মিটার (Width Limit)',
+                qBn: 'এই ট্রাফিক চিহ্নটি কোন ধরনের যানবাহনের প্রবেশ নিয়ন্ত্রণ করে?',
+                qEn: 'Which vehicles are restricted by this traffic sign?',
+                options: ['২ মিটারের বেশি উঁচু যানবাহন', '২ মিটারের বেশি চওড়া যানবাহন (Width Limit 2m)', '২ টনের বেশি ওজনের যানবাহন', '২ মিটারের বেশি লম্বা যানবাহন'],
+                ans: 1,
+                exp: 'দুই পাশে অনুভূমিক তীর ও মাঝখানে "2m" লেখার অর্থ হলো ২ মিটারের বেশি চওড়া (Width) কোনো যানবাহন এই রাস্তায় প্রবেশ করতে পারবে না।'
+            },
+            {
+                id: 15, category: 'MANDATORY', signCode: 'M_HEIGHT_3_5M', signNameBn: 'উচ্চতা সীমা ৩.৫ মিটার',
+                qBn: 'ওভারব্রিজ বা আন্ডারপাসের আগে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign placed before an underpass or bridge mean?',
+                options: ['রাস্তার চওড়া ৩.৫ মিটার', 'যানবাহনের সর্বোচ্চ উচ্চতা সীমা ৩.৫ মিটার (Height Limit 3.5m)', 'সেতুর দৈর্ঘ্য ৩.৫ মিটার', '৩.৫ কিমি দূরে টোল প্লাজা'],
+                ans: 1,
+                exp: 'উপরে ও নিচে তীরসহ "3.5m" চিহ্নটি নির্দেশ করে যে ৩.৫ মিটারের বেশি উচ্চতার কোনো যানবাহন এই পথে যেতে পারবে না।'
+            },
+            {
+                id: 16, category: 'MANDATORY', signCode: 'M_LENGTH_10M', signNameBn: 'দৈর্ঘ্য সীমা ১০ মিটার',
+                qBn: 'প্রদর্শিত চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does the displayed sign indicate?',
+                options: ['গতিসীমা ১০ কিমি/ঘণ্টা', 'যানবাহনের দৈর্ঘ্য সীমা ১০ মিটার (Length Limit 10m)', '১০ মিটার দূরে পার্কিং', '১০ টন ওজন সীমা'],
+                ans: 1,
+                exp: 'এটি যানবাহনের সর্বোচ্চ দৈর্ঘ্য সীমা (১০ মিটার) নির্দেশ করে। সাধারণত পাহাড়ি বা তীব্র বাঁকযুক্ত রাস্তায় বড় ট্রেলার প্রবেশ রোধে ব্যবহৃত হয়।'
+            },
+            {
+                id: 17, category: 'MANDATORY', signCode: 'M_LOAD_5T', signNameBn: 'ভার বহন সীমা ৫ টন (Load Limit)',
+                qBn: 'সেতুর আগে থাকা "5T" লেখা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this "5T" sign placed before a bridge mean?',
+                options: ['৫টি গাড়ি একসাথে যেতে পারবে', 'ভার বহন সীমা ৫ টন (Load Limit 5 Tonnes)', 'অ্যাক্সেল ওজন ৫ টন', '৫ কিমি গতিসীমা'],
+                ans: 1,
+                exp: 'এই চিহ্নটি নির্দেশ করে যে মোট ৫ টনের বেশি ওজনের কোনো যানবাহন ওই রাস্তা বা সেতুর ওপর দিয়ে চলাচল করতে পারবে না।'
+            },
+            {
+                id: 18, category: 'MANDATORY', signCode: 'M_AXLE_4T', signNameBn: 'অ্যাক্সেল ওজন সীমা ৪ টন',
+                qBn: 'চাকা ও অ্যাক্সেল প্রতীকসহ "4T" লেখা চিহ্নটি কী বোঝায়?',
+                qEn: 'What does the sign showing an axle with "4T" indicate?',
+                options: ['মোট ওজন সীমা ৪ টন', 'অ্যাক্সেল ওজন সীমা ৪ টন (Axle Load Limit 4 Tonnes)', 'শুধুমাত্র ৪ চাকার গাড়ি অনুমোদিত', '৪ মিটার প্রস্থ সীমা'],
+                ans: 1,
+                exp: 'এটি অ্যাক্সেল লোড লিমিট (Axle Load Limit) নির্দেশ করে। যেসব গাড়ির অ্যাক্সেল ওজন ৪ টনের সমান বা কম, কেবল সেগুলোই যেতে পারবে।'
+            },
+            {
+                id: 19, category: 'MANDATORY', signCode: 'M_RESTRICTION_ENDS', signNameBn: 'নিষেধাজ্ঞা সমাপ্ত (Restriction Ends)',
+                qBn: 'সাদা বৃত্তের মাঝখানে কালো তির্যক দাগ থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does a white circle with a diagonal black band signify?',
+                options: ['প্রবেশ নিষেধ', 'সমস্ত নিষেধাজ্ঞা সমাপ্ত (Restriction Ends)', 'পার্কিং নিষেধ', 'রাস্তা শেষ'],
+                ans: 1,
+                exp: 'এই চিহ্নটি পূর্বে আরোপিত গতিসীমা বা ওভারটেকিং সংক্রান্ত নিষেধাজ্ঞার সমাপ্তি (Restriction Ends) নির্দেশ করে।'
+            },
+            {
+                id: 20, category: 'MANDATORY', signCode: 'M_COMP_LEFT', signNameBn: 'বাম দিকে মোড় নেওয়া বাধ্যতামূলক',
+                qBn: 'নীল বৃত্তের মধ্যে সাদা তীর বাম দিকে নির্দেশ করলে তার অর্থ কী?',
+                qEn: 'What does a white left-pointing arrow on a blue circular disc mean?',
+                options: ['বাম দিকে মোড় নিষেধ', 'বাম দিকে মোড় নেওয়া বাধ্যতামূলক (Compulsory Turn Left)', 'বাম দিকে রাস্তা আছে', 'একমুখী রাস্তা'],
+                ans: 1,
+                exp: 'নীল বৃত্তাকার চিহ্নগুলো বাধ্যতামূলক দিক নির্দেশ করে। এর অর্থ চালককে অবশ্যই বাম দিকে মোড় নিতে হবে।'
+            },
+            {
+                id: 21, category: 'MANDATORY', signCode: 'M_COMP_AHEAD', signNameBn: 'সোজা যাওয়া বাধ্যতামূলক',
+                qBn: 'এই নীল বৃত্তাকার চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this blue circular sign indicate?',
+                options: ['সামনে মূল রাস্তা', 'শুধুমাত্র সোজা এগিয়ে যাওয়া বাধ্যতামূলক (Compulsory Ahead Only)', 'একমুখী ট্রাফিক', 'ওভারটেকিং অনুমোদিত'],
+                ans: 1,
+                exp: 'এই চিহ্নটি নির্দেশ করে যে গাড়িটিকে কেবল সোজা দিকেই চালিয়ে নিয়ে যেতে হবে; ডানে বা বামে মোড় নেওয়া যাবে না।'
+            },
+            {
+                id: 22, category: 'MANDATORY', signCode: 'M_COMP_RIGHT_AHEAD', signNameBn: 'সামনে গিয়ে ডান দিকে মোড় বাধ্যতামূলক',
+                qBn: 'প্রদর্শিত বাধ্যতামূলক চিহ্নটির অর্থ কী?',
+                qEn: 'What is the meaning of this compulsory direction sign?',
+                options: ['ডান দিকে তীব্র বাঁক', 'সামনে গিয়ে ডান দিকে মোড় নেওয়া বাধ্যতামূলক (Compulsory Turn Right Ahead)', 'ডান দিকে মোড় নিষেধ', 'ডান দিকে পার্শ্ব রাস্তা'],
+                ans: 1,
+                exp: 'এই চিহ্নটি চালককে সামনে এগিয়ে ডান দিকে মোড় নেওয়ার বাধ্যতামূলক নির্দেশ দেয়।'
+            },
+            {
+                id: 23, category: 'MANDATORY', signCode: 'M_COMP_AHEAD_OR_RIGHT', signNameBn: 'সোজা অথবা ডান দিকে যাওয়া বাধ্যতামূলক',
+                qBn: 'এই চিহ্নটি চালককে কোন কোন দিকে যাওয়ার অনুমতি দেয়?',
+                qEn: 'Which directions are permitted by this compulsory sign?',
+                options: ['সোজা অথবা বাম দিকে', 'সোজা অথবা ডান দিকে যাওয়া বাধ্যতামূলক (Compulsory Ahead or Turn Right)', 'শুধুমাত্র ডান দিকে', 'যেকোনো দিকে'],
+                ans: 1,
+                exp: 'চালককে হয় সোজা যেতে হবে অথবা ডান দিকে মোড় নিতে হবে; এখানে বাম দিকে মোড় নেওয়া সম্পূর্ণ নিষিদ্ধ।'
+            },
+            {
+                id: 24, category: 'MANDATORY', signCode: 'M_COMP_KEEP_LEFT', signNameBn: 'বাম দিক ঘেঁষে চলুন (Compulsory Keep Left)',
+                qBn: 'রাস্তার ডিভাইডার বা আইল্যান্ডের শুরুতে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign placed at the beginning of a central verge/island mean?',
+                options: ['বাম দিকে মোড় নিন', 'বাম দিক ঘেঁষে চলুন (Compulsory Keep Left)', 'বাম দিকে পার্কিং', 'সামনে ঢালু রাস্তা'],
+                ans: 1,
+                exp: 'এটি "বাম দিক ঘেঁষে চলুন" (Compulsory Keep Left) নির্দেশ করে। ট্রাফিক আইল্যান্ড বা ডিভাইডারের বাম পাশ দিয়ে গাড়ি চালাতে হবে।'
+            },
+            {
+                id: 25, category: 'MANDATORY', signCode: 'M_COMP_CYCLE', signNameBn: 'বাধ্যতামূলক সাইকেল ট্র্যাক',
+                qBn: 'নীল বৃত্তের মধ্যে সাদা সাইকেলের প্রতীক কী বোঝায়?',
+                qEn: 'What does a white bicycle symbol inside a blue circle mean?',
+                options: ['সাইকেল চলাচল নিষেধ', 'বাধ্যতামূলক সাইকেল ট্র্যাক (Compulsory Cycle Track)', 'সামনে সাইকেল পারাপার', 'সাইকেল স্ট্যান্ড'],
+                ans: 1,
+                exp: 'এটি সাইকেল চালকদের জন্য নির্ধারিত বাধ্যতামূলক সাইকেল ট্র্যাক নির্দেশ করে এবং অন্য মোটরযান এই ট্র্যাকে চলতে পারবে না।'
+            },
+
+            // ================= 26-50: CAUTIONARY / WARNING SIGNS (সতর্কতামূলক চিহ্ন) =================
+            {
+                id: 26, category: 'CAUTIONARY', signCode: 'C_RIGHT_CURVE', signNameBn: 'ডান দিকে বাঁক (Right Hand Curve)',
+                qBn: 'লাল ত্রিভুজের মধ্যে থাকা এই চিহ্নটি কীসের সতর্কবার্তা দেয়?',
+                qEn: 'What warning does this red triangular sign give?',
+                options: ['ডান দিকে মোড় নেওয়া বাধ্যতামূলক', 'সামনে ডান দিকে বাঁক (Right Hand Curve)', 'ডান দিকে মোড় নিষেধ', 'সামনে একমুখী রাস্তা'],
+                ans: 1,
+                exp: 'লাল ত্রিভুজাকৃতি এই সতর্কতামূলক চিহ্নটি জানায় যে সামনে রাস্তাটি ডান দিকে বেঁকে গেছে, তাই গাড়ির গতি কমানো উচিত।'
+            },
+            {
+                id: 27, category: 'CAUTIONARY', signCode: 'C_LEFT_CURVE', signNameBn: 'বাম দিকে বাঁক (Left Hand Curve)',
+                qBn: 'এই সতর্কতামূলক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this cautionary sign indicate?',
+                options: ['বাম দিকে মোড় নিষেধ', 'সামনে বাম দিকে বাঁক (Left Hand Curve)', 'বাম দিক ঘেঁষে চলুন', 'বাম দিকে পার্শ্ব রাস্তা'],
+                ans: 1,
+                exp: 'এটি সামনে বাম দিকে রাস্তার বাঁক (Left Hand Curve) সম্পর্কে চালককে সতর্ক করে।'
+            },
+            {
+                id: 28, category: 'CAUTIONARY', signCode: 'C_RIGHT_HAIRPIN', signNameBn: 'ডান দিকে চুলের কাঁটার মতো তীব্র বাঁক',
+                qBn: 'পাহাড়ি রাস্তায় প্রদর্শিত এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign commonly seen on hill roads mean?',
+                options: ['ইউ-টার্ন অনুমোদিত', 'ডান দিকে চুলের কাঁটার মতো তীব্র বাঁক (Right Hairpin Bend)', 'বাম দিকে তীব্র বাঁক', 'ইউ-টার্ন নিষেধ'],
+                ans: 1,
+                exp: 'এটি "Right Hairpin Bend" বা ডান দিকে চুলের কাঁটার মতো অত্যন্ত তীব্র বাঁক নির্দেশ করে। এখানে হর্ন বাজিয়ে ধীর গতিতে চলা উচিত।'
+            },
+            {
+                id: 29, category: 'CAUTIONARY', signCode: 'C_LEFT_HAIRPIN', signNameBn: 'বাম দিকে চুলের কাঁটার মতো তীব্র বাঁক',
+                qBn: 'এই সতর্কতামূলক ট্রাফিক চিহ্নটি কী বোঝায়?',
+                qEn: 'What does this warning traffic sign signify?',
+                options: ['বাম দিকে চুলের কাঁটার মতো তীব্র বাঁক (Left Hairpin Bend)', 'ইউ-টার্ন নিষেধ', 'বাম দিকে মোড় নিষেধ', 'সামনে গোলচত্বর'],
+                ans: 0,
+                exp: 'এটি সামনে বাম দিকে ১৮০ ডিগ্রির কাছাকাছি চুলের কাঁটার মতো তীব্র বাঁক (Left Hairpin Bend) সম্পর্কে সতর্ক করে।'
+            },
+            {
+                id: 30, category: 'CAUTIONARY', signCode: 'C_RIGHT_REVERSE_BEND', signNameBn: 'ডান দিকে আঁকাবাঁকা রাস্তা (Right Reverse Bend)',
+                qBn: 'ইংরেজি Z বা আঁকাবাঁকা তীরের এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this zigzag arrow warning sign indicate?',
+                options: ['পিচ্ছিল রাস্তা', 'ডান দিকে আঁকাবাঁকা বাঁক (Right Reverse Bend)', 'বাম দিকে আঁকাবাঁকা বাঁক', 'সামনে খারাপ রাস্তা'],
+                ans: 1,
+                exp: 'রাস্তাটি প্রথমে ডান দিকে এবং তার পরপরই বাম দিকে বেঁকে গেছে (Right Reverse Bend)—চালককে গতি কমাতে সতর্ক করা হচ্ছে।'
+            },
+            {
+                id: 31, category: 'CAUTIONARY', signCode: 'C_LEFT_REVERSE_BEND', signNameBn: 'বাম দিকে আঁকাবাঁকা রাস্তা (Left Reverse Bend)',
+                qBn: 'এই সতর্কতামূলক চিহ্নটির অর্থ কী?',
+                qEn: 'What is the meaning of this cautionary sign?',
+                options: ['বাম দিকে আঁকাবাঁকা বাঁক (Left Reverse Bend)', 'ডান দিকে আঁকাবাঁকা বাঁক', 'বাম দিকে সংকীর্ণ রাস্তা', 'একমুখী রাস্তা'],
+                ans: 0,
+                exp: 'সামনে প্রথমে বাম দিকে এবং পরে ডান দিকে পরপর দুটি বাঁক (Left Reverse Bend) রয়েছে।'
+            },
+            {
+                id: 32, category: 'CAUTIONARY', signCode: 'C_STEEP_ASCENT', signNameBn: 'খাড়া চড়াই (Steep Ascent)',
+                qBn: 'এই চিহ্নটি সামনে কেমন রাস্তার ইঙ্গিত দেয়?',
+                qEn: 'What kind of road ahead is indicated by this sign?',
+                options: ['খাড়া উতরাই (Steep Descent)', 'খাড়া চড়াই (Steep Ascent)', 'সমতল রাস্তা', 'ভাঙা রাস্তা'],
+                ans: 1,
+                exp: 'এটি সামনে খাড়া চড়াই বা উঁচুতে ওঠার রাস্তা (Steep Ascent) নির্দেশ করে। চালককে নিম্ন গিয়ারে গাড়ি চালানোর পরামর্শ দেওয়া হয়।'
+            },
+            {
+                id: 33, category: 'CAUTIONARY', signCode: 'C_STEEP_DESCENT', signNameBn: 'খাড়া উতরাই (Steep Descent)',
+                qBn: 'প্রদর্শিত সতর্কতামূলক চিহ্নটি কী বোঝায়?',
+                qEn: 'What does the displayed warning sign indicate?',
+                options: ['খাড়া চড়াই', 'খাড়া উতরাই বা ঢালু রাস্তা (Steep Descent)', 'সামনে নদী', 'পিচ্ছিল রাস্তা'],
+                ans: 1,
+                exp: 'এটি সামনে খাড়া উতরাই বা নিচের দিকে ঢালু রাস্তা (Steep Descent) নির্দেশ করে।'
+            },
+            {
+                id: 34, category: 'CAUTIONARY', signCode: 'C_NARROW_ROAD', signNameBn: 'সামনে সংকীর্ণ রাস্তা (Narrow Road Ahead)',
+                qBn: 'এই চিহ্নটি দেখলে চালক কী বুঝতে পারবেন?',
+                qEn: 'What should a driver understand upon seeing this sign?',
+                options: ['সামনে রাস্তা চওড়া হচ্ছে', 'সামনে রাস্তা সংকীর্ণ বা সরু হয়েছে (Narrow Road Ahead)', 'সামনে সরু সেতু', 'রাস্তা বন্ধ'],
+                ans: 1,
+                exp: 'দুটি সমান্তরাল রেখা সামনে গিয়ে কাছাকাছি আসার অর্থ হলো চওড়া রাস্তাটি সামনে সরু হয়ে গেছে (Narrow Road Ahead)।'
+            },
+            {
+                id: 35, category: 'CAUTIONARY', signCode: 'C_ROAD_WIDENS', signNameBn: 'সামনে চওড়া রাস্তা (Road Widens Ahead)',
+                qBn: 'এই সতর্কতামূলক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this cautionary sign signify?',
+                options: ['সামনে সংকীর্ণ রাস্তা', 'সামনে রাস্তা চওড়া হয়েছে (Road Widens Ahead)', 'সামনে সেতু', 'দুই লেনের রাস্তা শেষ'],
+                ans: 1,
+                exp: 'সরু রেখা দুটি সামনে প্রসারিত হওয়ার অর্থ হলো সামনের রাস্তাটি চওড়া হচ্ছে (Road Widens Ahead)।'
+            },
+            {
+                id: 36, category: 'CAUTIONARY', signCode: 'C_NARROW_BRIDGE', signNameBn: 'সামনে সংকীর্ণ সেতু (Narrow Bridge)',
+                qBn: 'প্রদর্শিত চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does the shown sign indicate?',
+                options: ['সামনে সংকীর্ণ রাস্তা', 'সামনে সংকীর্ণ সেতু (Narrow Bridge Ahead)', 'সামনে ফেরি ঘাট', 'রেলওয়ে ওভারব্রিজ'],
+                ans: 1,
+                exp: 'এটি সামনে একটি সরু বা সংকীর্ণ কালভার্ট/সেতু (Narrow Bridge) থাকার সতর্কবার্তা দেয়।'
+            },
+            {
+                id: 37, category: 'CAUTIONARY', signCode: 'C_SLIPPERY_ROAD', signNameBn: 'পিচ্ছিল রাস্তা (Slippery Road)',
+                qBn: 'গাড়ির নিচে আঁকাবাঁকা চাকার দাগ থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign showing a car with skid marks mean?',
+                options: ['আঁকাবাঁকা রাস্তা', 'পিচ্ছিল রাস্তা (Slippery Road)', 'মাতাল অবস্থায় গাড়ি চালানো নিষেধ', 'নুড়ি পাথরের রাস্তা'],
+                ans: 1,
+                exp: 'এটি "পিচ্ছিল রাস্তা" (Slippery Road) নির্দেশ করে। বৃষ্টি, তেল বা কাদার কারণে চাকা পিছলে যেতে পারে, তাই গতি কমানো জরুরি।'
+            },
+            {
+                id: 38, category: 'CAUTIONARY', signCode: 'C_LOOSE_GRAVEL', signNameBn: 'আলগা নুড়ি পাথর (Loose Gravel)',
+                qBn: 'রাস্তা মেরামতের স্থানে থাকা এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this sign seen near roadworks indicate?',
+                options: ['পিচ্ছিল রাস্তা', 'রাস্তায় আলগা নুড়ি পাথর আছে (Loose Gravel)', 'পাহাড় থেকে পাথর পড়ছে', 'কাজ চলছে'],
+                ans: 1,
+                exp: 'রাস্তায় আলগা নুড়ি পাথর (Loose Gravel) ছড়িয়ে আছে, যা চাকার চাপে ছিটকে উঠতে পারে; তাই ধীরগতিতে গাড়ি চালানো উচিত।'
+            },
+            {
+                id: 39, category: 'CAUTIONARY', signCode: 'C_CYCLE_CROSSING', signNameBn: 'সাইকেল পারাপার (Cycle Crossing)',
+                qBn: 'লাল ত্রিভুজের মধ্যে সাইকেলের প্রতীক কী নির্দেশ করে?',
+                qEn: 'What does a bicycle symbol inside a red triangle indicate?',
+                options: ['বাধ্যতামূলক সাইকেল ট্র্যাক', 'সামনে সাইকেল পারাপার (Cycle Crossing)', 'সাইকেল চলাচল নিষেধ', 'সাইকেল পার্কিং'],
+                ans: 1,
+                exp: 'লাল ত্রিভুজে সাইকেল থাকার অর্থ হলো সামনে সাইকেল পারাপারের স্থান (Cycle Crossing) রয়েছে।'
+            },
+            {
+                id: 40, category: 'CAUTIONARY', signCode: 'C_PEDESTRIAN_CROSSING', signNameBn: 'পথচারী পারাপার (Pedestrian Crossing)',
+                qBn: 'জেব্রা ক্রসিংয়ের আগে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign placed before a zebra crossing mean?',
+                options: ['সামনে স্কুল', 'সামনে পথচারী পারাপার (Pedestrian Crossing)', 'পথচারী প্রবেশ নিষেধ', 'রাস্তার কাজ চলছে'],
+                ans: 1,
+                exp: 'এই সতর্কতামূলক চিহ্নটি জানায় যে সামনে পথচারী পারাপারের (Pedestrian Crossing) স্থান রয়েছে। পথচারীদের রাস্তা পার হতে অগ্রাধিকার দিন।'
+            },
+            {
+                id: 41, category: 'CAUTIONARY', signCode: 'C_SCHOOL_AHEAD', signNameBn: 'সামনে স্কুল (School Ahead)',
+                qBn: 'ব্যাগ হাতে শিশুদের প্রতীকযুক্ত এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this sign showing children carrying school bags indicate?',
+                options: ['পথচারী পারাপার', 'সামনে স্কুল (School Ahead) — গতি কমান', 'শিশু উদ্যান', 'শুধুমাত্র ছাত্রছাত্রীদের রাস্তা'],
+                ans: 1,
+                exp: 'এটি "সামনে স্কুল" (School Ahead) নির্দেশ করে। শিশুদের নিরাপত্তার জন্য চালককে গতি কমিয়ে সতর্কভাবে গাড়ি চালাতে হবে।'
+            },
+            {
+                id: 42, category: 'CAUTIONARY', signCode: 'C_MEN_AT_WORK', signNameBn: 'রাস্তার কাজ চলছে (Men at Work)',
+                qBn: 'প্রদর্শিত সতর্কতামূলক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this warning sign indicate?',
+                options: ['সামনে কারখানা', 'রাস্তার কাজ চলছে (Men at Work)', 'সামনে আবর্জনা ফেলার স্থান', 'খনন কার্যের এলাকা'],
+                ans: 1,
+                exp: 'বেলচা হাতে শ্রমিকের প্রতীকটি নির্দেশ করে যে সামনে রাস্তার মেরামত বা নির্মাণ কাজ চলছে (Men at Work)।'
+            },
+            {
+                id: 43, category: 'CAUTIONARY', signCode: 'C_CATTLE', signNameBn: 'গবাদি পশু পারাপার (Cattle)',
+                qBn: 'গ্রামীণ বা রাজ্য সড়কে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign found on rural or state highways mean?',
+                options: ['সামনে পশু হাসপাতাল', 'রাস্তায় গবাদি পশু চলাচলের সম্ভাবনা (Cattle Ahead)', 'চিড়িয়াখানা', 'গরুর গাড়ি চলাচল নিষেধ'],
+                ans: 1,
+                exp: 'এই চিহ্নটি সতর্ক করে যে সামনের রাস্তায় গবাদি পশু বা গরু-মহিষ পারাপার করতে পারে।'
+            },
+            {
+                id: 44, category: 'CAUTIONARY', signCode: 'C_FALLING_ROCKS', signNameBn: 'পাথর ধসের প্রবণতা (Falling Rocks)',
+                qBn: 'পাহাড়ি রাস্তায় থাকা এই চিহ্নটি কীসের সতর্কতা দেয়?',
+                qEn: 'What warning does this sign give on hilly roads?',
+                options: ['আলগা নুড়ি পাথর', 'উপর থেকে পাথর পড়ার বা ধসের সম্ভাবনা (Falling Rocks)', 'খাড়া চড়াই', 'রাস্তা বন্ধ'],
+                ans: 1,
+                exp: 'পাহাড়ের গা থেকে পাথর গড়িয়ে রাস্তায় পড়ার সম্ভাবনা (Falling Rocks) থাকলে এই সতর্কতামূলক চিহ্ন ব্যবহৃত হয়।'
+            },
+            {
+                id: 45, category: 'CAUTIONARY', signCode: 'C_CROSS_ROAD', signNameBn: 'সামনে চৌরাস্তা (Cross Road Ahead)',
+                qBn: 'লাল ত্রিভুজের মধ্যে "X" বা যোগ চিহ্ন কী নির্দেশ করে?',
+                qEn: 'What does a cross inside a red triangle indicate?',
+                options: ['প্রাথমিক চিকিৎসা কেন্দ্র', 'সামনে চৌরাস্তা বা আড়াআড়ি সংযোগস্থল (Cross Road Ahead)', 'থামা নিষেধ', 'রেলওয়ে ক্রসিং'],
+                ans: 1,
+                exp: 'এটি সামনে একটি চৌরাস্তা (Cross Road Intersection) থাকার সতর্কবার্তা দেয়।'
+            },
+            {
+                id: 46, category: 'CAUTIONARY', signCode: 'C_GAP_IN_MEDIAN', signNameBn: 'ডিভাইডারে ফাঁক (Gap in Median)',
+                qBn: 'জাতীয় বা রাজ্য সড়কে থাকা এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does this sign on a divided highway mean?',
+                options: ['সামনে সংকীর্ণ সেতু', 'রাস্তার মাঝের ডিভাইডারে ফাঁক বা কাটা আছে (Gap in Median)', 'সামনে টোল গেট', 'দুই লেনের রাস্তা'],
+                ans: 1,
+                exp: 'এই চিহ্নটি জানায় যে সামনে ডিভাইডারের মাঝখানে ফাঁক (Gap in Median) রয়েছে, যেখান দিয়ে গাড়ি ইউ-টার্ন নিতে বা পার হতে পারে।'
+            },
+            {
+                id: 47, category: 'CAUTIONARY', signCode: 'C_SIDE_ROAD_LEFT', signNameBn: 'বাম দিকে পার্শ্ব রাস্তা (Side Road Left)',
+                qBn: 'এই চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this sign indicate?',
+                options: ['বাম দিকে মোড় নিন', 'বাম দিকে পার্শ্ব রাস্তা আছে (Side Road Left)', 'সামনে টি-জংশন', 'বাম দিক থেকে রাস্তা বন্ধ'],
+                ans: 1,
+                exp: 'এটি নির্দেশ করে যে সামনের মূল রাস্তার বাম দিক থেকে একটি পার্শ্ব রাস্তা (Side Road Left) যুক্ত হয়েছে।'
+            },
+            {
+                id: 48, category: 'CAUTIONARY', signCode: 'C_Y_INTERSECTION', signNameBn: 'ওয়াই-আকৃতির সংযোগস্থল (Y-Intersection)',
+                qBn: 'ইংরেজি "Y" আকৃতির এই চিহ্নটি কী বোঝায়?',
+                qEn: 'What does this Y-shaped sign inside a triangle represent?',
+                options: ['রাস্তা চওড়া হচ্ছে', 'সামনে ওয়াই-আকৃতির রাস্তার সংযোগস্থল (Y-Intersection)', 'দুই দিকে যাওয়া বাধ্যতামূলক', 'ওভারব্রিজ'],
+                ans: 1,
+                exp: 'সামনে মূল রাস্তাটি দুটি ভাগে (Y-Intersection) বিভক্ত হয়েছে।'
+            },
+            {
+                id: 49, category: 'CAUTIONARY', signCode: 'C_ROUNDABOUT', signNameBn: 'সামনে গোলচত্বর (Roundabout)',
+                qBn: 'বৃত্তাকার ঘূর্ণায়মান তীরযুক্ত এই সতর্কতামূলক চিহ্নটির অর্থ কী?',
+                qEn: 'What does this warning sign with circular arrows mean?',
+                options: ['ইউ-টার্ন অনুমোদিত', 'সামনে গোলচত্বর (Roundabout Ahead)', 'ঘূর্ণিঝড় প্রবণ এলাকা', 'টায়ার সার্ভিসিং কেন্দ্র'],
+                ans: 1,
+                exp: 'এটি সামনে একটি গোলচত্বর বা রোটারি জংশন (Roundabout) থাকার ইঙ্গিত দেয়।'
+            },
+            {
+                id: 50, category: 'CAUTIONARY', signCode: 'C_GUARDED_RAILWAY', signNameBn: 'রক্ষীসহ রেলওয়ে ক্রসিং (Guarded Level Crossing)',
+                qBn: 'লাল ত্রিভুজের মধ্যে রেললাইনের ফেন্স বা গেটের ছবি কী নির্দেশ করে?',
+                qEn: 'What does a fence/gate symbol inside a red triangle indicate?',
+                options: ['অরক্ষিত রেলওয়ে ক্রসিং', 'রক্ষীসহ বা গেটযুক্ত রেলওয়ে লেভেল ক্রসিং (Guarded Railway Crossing)', 'সামনে রেল স্টেশন', 'রাস্তায় ব্যারিকেড'],
+                ans: 1,
+                exp: 'বেড়া বা গেটের ছবি থাকলে তা "রক্ষীসহ রেলওয়ে লেভেল ক্রসিং" (Guarded Level Crossing) নির্দেশ করে। আর ট্রেনের ইঞ্জিনের ছবি থাকলে তা অরক্ষিত রেলওয়ে ক্রসিং বোঝায়।'
+            },
+
+            // ================= 51-65: INFORMATORY SIGNS (তথ্যমূলক চিহ্ন) =================
+            {
+                id: 51, category: 'INFORMATORY', signCode: 'I_PETROL_PUMP', signNameBn: 'পেট্রোল পাম্প (Petrol Pump)',
+                qBn: 'নীল আয়তক্ষেত্রাকার এই তথ্যমূলক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this blue rectangular informatory sign indicate?',
+                options: ['অগ্নিনির্বাপক কেন্দ্র', 'পেট্রোল পাম্প বা জ্বালানি কেন্দ্র (Petrol Pump)', 'গাড়ি মেরামত কেন্দ্র', 'পানীয় জলের কল'],
+                ans: 1,
+                exp: 'নীল আয়তক্ষেত্রাকার চিহ্নটি তথ্যমূলক। এটি সামনে পেট্রোল পাম্প বা ফুয়েল স্টেশন থাকার তথ্য দেয়।'
+            },
+            {
+                id: 52, category: 'INFORMATORY', signCode: 'I_HOSPITAL', signNameBn: 'হাসপাতাল (Hospital)',
+                qBn: 'বিছানা এবং লাল ক্রস (+) চিহ্নযুক্ত এই বোর্ডটি কী বোঝায়?',
+                qEn: 'What does this sign showing a bed and a red cross indicate?',
+                options: ['বিশ্রামাগার', 'হাসপাতাল (Hospital)', 'প্রাথমিক চিকিৎসা কেন্দ্র', 'ওষুধের দোকান'],
+                ans: 1,
+                exp: 'রোগীর বিছানা এবং লাল ক্রস চিহ্ন একত্রে থাকলে তা সামনে একটি "হাসপাতাল" (Hospital) নির্দেশ করে, যেখানে ভর্তির সুবিধা আছে।'
+            },
+            {
+                id: 53, category: 'INFORMATORY', signCode: 'I_FIRST_AID', signNameBn: 'প্রাথমিক চিকিৎসা কেন্দ্র (First Aid Post)',
+                qBn: 'শুধুমাত্র লাল যোগ (+) চিহ্ন থাকা নীল বোর্ডটি কী নির্দেশ করে?',
+                qEn: 'What does a red plus (+) sign on a white square inside a blue board indicate?',
+                options: ['হাসপাতাল', 'প্রাথমিক চিকিৎসা কেন্দ্র (First Aid Post)', 'সামনে চৌরাস্তা', 'রক্তদান শিবির'],
+                ans: 1,
+                exp: 'বিছানা ছাড়া শুধুমাত্র লাল ক্রস (+) চিহ্ন থাকলে তা "প্রাথমিক চিকিৎসা কেন্দ্র" (First Aid Post) নির্দেশ করে।'
+            },
+            {
+                id: 54, category: 'INFORMATORY', signCode: 'I_EATING_PLACE', signNameBn: 'খাবার হোটেল বা রেস্তোরাঁ (Eating Place)',
+                qBn: 'চামচ ও কাঁটাচামচের প্রতীকযুক্ত এই চিহ্নটির অর্থ কী?',
+                qEn: 'What does the sign with a fork and spoon mean?',
+                options: ['হালকা জলখাবার', 'খাবার স্থান বা রেস্তোরাঁ (Eating Place)', 'রান্নাঘর', 'পিকনিক স্পট'],
+                ans: 1,
+                exp: 'কাঁটাচামচ ও চামচের প্রতীক সামনে একটি খাবার হোটেল বা রেস্তোরাঁ (Eating Place) থাকার তথ্য দেয়।'
+            },
+            {
+                id: 55, category: 'INFORMATORY', signCode: 'I_LIGHT_REFRESHMENT', signNameBn: 'হালকা জলখাবার (Light Refreshment)',
+                qBn: 'চায়ের কাপের ছবি থাকা তথ্যমূলক চিহ্নটি কী বোঝায়?',
+                qEn: 'What does the informatory sign showing a teacup mean?',
+                options: ['রেস্তোরাঁ', 'হালকা জলখাবার বা চায়ের দোকান (Light Refreshment)', 'পানীয় জল', 'বিশ্রামাগার'],
+                ans: 1,
+                exp: 'এটি সামনে চা-কফি বা হালকা জলখাবারের দোকান (Light Refreshment) থাকার তথ্য প্রদান করে।'
+            },
+            {
+                id: 56, category: 'INFORMATORY', signCode: 'I_RESTING_PLACE', signNameBn: 'বিশ্রামাগার (Resting Place)',
+                qBn: 'শুধুমাত্র বিছানার প্রতীক (কোনো ক্রস চিহ্ন ছাড়া) কী নির্দেশ করে?',
+                qEn: 'What does a sign showing only a bed (without a cross) indicate?',
+                options: ['হাসপাতাল', 'বিশ্রামাগার বা মোটেল (Resting Place)', 'ফার্নিচারের দোকান', 'রাত্রিবাস নিষেধ'],
+                ans: 1,
+                exp: 'ক্রস চিহ্ন ছাড়া শুধু খাট বা বিছানার ছবি থাকলে তা যাত্রীদের জন্য "বিশ্রামাগার" বা হোটেল/মোটেল (Resting Place) নির্দেশ করে।'
+            },
+            {
+                id: 57, category: 'INFORMATORY', signCode: 'I_NO_THROUGH_ROAD', signNameBn: 'সামনে রাস্তা বন্ধ / কানাগলি (No Through Road)',
+                qBn: 'নীল বোর্ডের মধ্যে সাদা উল্লম্ব রেখার মাথায় লাল পট্টি কী নির্দেশ করে?',
+                qEn: 'What does a white vertical bar topped with a red strip on a blue square mean?',
+                options: ['প্রবেশ নিষেধ', 'সামনে রাস্তা বন্ধ বা কানাগলি (No Through Road / Dead End)', 'টি-জংশন', 'টোল প্লাজা'],
+                ans: 1,
+                exp: 'এটি "No Through Road" বা কানাগলি নির্দেশ করে, অর্থাৎ এই রাস্তা দিয়ে সামনে বেরোনোর কোনো পথ নেই।'
+            },
+            {
+                id: 58, category: 'INFORMATORY', signCode: 'I_NO_THROUGH_SIDE_ROAD', signNameBn: 'পার্শ্ব রাস্তা বন্ধ (No Through Side Road)',
+                qBn: 'এই তথ্যমূলক চিহ্নটি কী নির্দেশ করে?',
+                qEn: 'What does this informatory road sign indicate?',
+                options: ['ডান দিকে মোড় নিষেধ', 'পার্শ্ব রাস্তাটি সামনে বন্ধ (No Through Side Road)', 'ডান দিকে পার্শ্ব রাস্তা', 'সামনে পেট্রোল পাম্প'],
+                ans: 1,
+                exp: 'মূল রাস্তা খোলা থাকলেও ডান দিকের পার্শ্ব রাস্তাটি সামনে বন্ধ (No Through Side Road) তা এই চিহ্ন দিয়ে জানানো হয়।'
+            },
+            {
+                id: 59, category: 'INFORMATORY', signCode: 'I_PARK_THIS_SIDE', signNameBn: 'পার্কিং করার স্থান (Parking)',
+                qBn: 'নীল বর্গাকার বোর্ডে বড় সাদা "P" লেখা থাকলে তার অর্থ কী?',
+                qEn: 'What does a large white "P" on a blue square board mean?',
+                options: ['পার্কিং নিষেধ', 'পার্কিং করার অনুমোদিত স্থান (Parking Place)', 'পুলিশ স্টেশন', 'পেট্রোল পাম্প'],
+                ans: 1,
+                exp: 'নীল বোর্ডে সাদা "P" চিহ্নটি যানবাহন পার্কিং করার বৈধ স্থান (Parking Lot) নির্দেশ করে।'
+            },
+            {
+                id: 60, category: 'INFORMATORY', signCode: 'I_PARKING_SCOOTER', signNameBn: 'স্কুটার ও মোটরসাইকেল পার্কিং',
+                qBn: 'এই পার্কিং চিহ্নটি কোন যানবাহনের জন্য প্রযোজ্য?',
+                qEn: 'Which vehicles is this parking sign meant for?',
+                options: ['সাইকেল পার্কিং', 'স্কুটার ও মোটরসাইকেল পার্কিং (Parking Lot - Scooters & Motorcycles)', 'চার চাকার গাড়ি পার্কিং', 'ট্যাক্সি স্ট্যান্ড'],
+                ans: 1,
+                exp: 'এটি শুধুমাত্র দ্বিচক্র যান অর্থাৎ স্কুটার ও মোটরসাইকেল পার্কিং করার নির্ধারিত স্থান নির্দেশ করে।'
+            },
+            {
+                id: 61, category: 'INFORMATORY', signCode: 'I_PARKING_AUTO', signNameBn: 'অটোরিকশা পার্কিং (Auto Rickshaw Parking)',
+                qBn: 'প্রদর্শিত তথ্যমূলক চিহ্নটি কী বোঝায়?',
+                qEn: 'What does the displayed informatory sign indicate?',
+                options: ['বাস স্টপ', 'অটোরিকশা পার্কিং স্ট্যান্ড (Parking Lot - Auto Rickshaws)', 'মোটরগাড়ি পার্কিং', 'গাড়ি মেরামত কেন্দ্র'],
+                ans: 1,
+                exp: 'এটি অটোরিকশা পার্ক করার জন্য নির্ধারিত স্ট্যান্ড নির্দেশ করে।'
+            },
+            {
+                id: 62, category: 'INFORMATORY', signCode: 'I_PUBLIC_TELEPHONE', signNameBn: 'পাবলিক টেলিফোন (Public Telephone)',
+                qBn: 'টেলিফোন রিসিভারের প্রতীকযুক্ত এই বোর্ডটি কী নির্দেশ করে?',
+                qEn: 'What does this board with a telephone receiver symbol indicate?',
+                options: ['মোবাইল ব্যবহার নিষেধ', 'পাবলিক টেলিফোন বুথ বা জরুরি কল বক্স (Public Telephone)', 'পুলিশ কন্ট্রোল রুম', 'সাইবার ক্যাফে'],
+                ans: 1,
+                exp: 'হাইওয়েতে জরুরি যোগাযোগের জন্য সামনে পাবলিক টেলিফোন বা এমার্জেন্সি কল বক্স উপলব্ধ আছে।'
+            },
+            {
+                id: 63, category: 'INFORMATORY', signCode: 'I_REPAIR_FACILITY', signNameBn: 'গাড়ি মেরামত কেন্দ্র (Repair Facility)',
+                qBn: 'রেঞ্চ বা স্প্যানার (Spanner) প্রতীকযুক্ত এই নীল বোর্ডটির অর্থ কী?',
+                qEn: 'What does this blue sign showing a wrench/spanner mean?',
+                options: ['রাস্তার কাজ চলছে', 'গাড়ি মেরামত কারখানা বা গ্যারেজ (Repair Facility)', 'হার্ডওয়্যারের দোকান', 'কলকারখানা অঞ্চল'],
+                ans: 1,
+                exp: 'স্প্যানার বা রেঞ্চ প্রতীকটি নির্দেশ করে যে সামনে যানবাহন মেরামত করার গ্যারেজ বা ওয়ার্কশপ (Repair Facility) রয়েছে।'
+            },
+            {
+                id: 64, category: 'INFORMATORY', signCode: 'I_PEDESTRIAN_SUBWAY', signNameBn: 'পথচারী সাবওয়ে বা আন্ডারপাস',
+                qBn: 'সিঁড়ি দিয়ে নিচে নামার প্রতীকযুক্ত এই চিহ্নটি কী বোঝায়?',
+                qEn: 'What does this sign showing a person walking down stairs indicate?',
+                options: ['সামনে স্কুল', 'পথচারীদের রাস্তা পারাপারের ভূগর্ভস্থ পথ (Pedestrian Subway)', 'ফুট ওভারব্রিজ', 'বিপজ্জনক খাদ'],
+                ans: 1,
+                exp: 'এটি পথচারীদের নিরাপদে রাস্তা পার হওয়ার জন্য ভূগর্ভস্থ সাবওয়ে বা আন্ডারপাস (Pedestrian Subway) নির্দেশ করে।'
+            },
+            {
+                id: 65, category: 'INFORMATORY', signCode: 'I_BUS_STOP', signNameBn: 'বাস স্টপ (Bus Stop)',
+                qBn: 'নীল বোর্ডের মধ্যে বাসের প্রতীক কী নির্দেশ করে?',
+                qEn: 'What does a bus symbol inside a blue rectangular sign indicate?',
+                options: ['শুধুমাত্র বাস চলাচলের লেন', 'বাস স্টপ (Bus Stop)', 'বাস প্রবেশ নিষেধ', 'সরকারি বাস ডিপো'],
+                ans: 1,
+                exp: 'এটি যাত্রীদের ওঠানামার জন্য নির্ধারিত "বাস স্টপ" (Bus Stop) নির্দেশ করে।'
+            },
+
+            // ================= 66-100: TRAFFIC RULES & MOTOR VEHICLES ACT (ট্রাফিক নিয়ম ও আইন) =================
+            {
+                id: 66, category: 'RULES', signCode: null,
+                qBn: 'লার্নার লাইসেন্সের (Learner\'s Licence) মেয়াদ কত দিন থাকে?',
+                qEn: 'What is the validity period of a Learner\'s Licence in India?',
+                options: ['৩০ দিন', '৬ মাস (6 Months)', '১ বছর', 'পাকা লাইসেন্স না পাওয়া পর্যন্ত'],
+                ans: 1,
+                exp: 'মোটর ভেহিকেলস আইন অনুযায়ী লার্নার লাইসেন্স ইস্যু হওয়ার দিন থেকে ৬ মাস (১৮০ দিন) পর্যন্ত বৈধ থাকে।'
+            },
+            {
+                id: 67, category: 'RULES', signCode: null,
+                qBn: 'লার্নার লাইসেন্স পাওয়ার কত দিন পর স্থায়ী ড্রাইভিং লাইসেন্সের (Permanent DL) জন্য আবেদন করা যায়?',
+                qEn: 'After how many days of obtaining a Learner\'s Licence can one apply for a Permanent Driving Licence?',
+                options: ['৭ দিন পর', '৩০ দিন পর এবং ১৮০ দিনের মধ্যে (After 30 days & within 180 days)', '৯০ দিন পর', 'যেকোনো সময়'],
+                ans: 1,
+                exp: 'লার্নার লাইসেন্স ইস্যু হওয়ার কমপক্ষে ৩০ দিন পূর্ণ হলে এবং ৬ মাসের (১৮০ দিন) মেয়াদ শেষ হওয়ার আগে স্থায়ী ড্রাইভিং লাইসেন্সের টেস্টের জন্য আবেদন করা যায়।'
+            },
+            {
+                id: 68, category: 'RULES', signCode: null,
+                qBn: 'গিয়ারবিহীন মোটরসাইকেল (৫০ সিসি-র কম বা নির্দিষ্ট হালকা স্কুটার) চালানোর জন্য ন্যূনতম বয়স কত হওয়া প্রয়োজন?',
+                qEn: 'What is the minimum age required to obtain a licence for a motorcycle without gear (up to 50cc)?',
+                options: ['১৪ বছর', '১৬ বছর (16 Years)', '১৮ বছর', '২০ বছর'],
+                ans: 1,
+                exp: 'অভিভাবকের সম্মতি সাপেক্ষে ১৬ বছর বয়সে গিয়ারবিহীন হালকা মোটরসাইকেল চালানোর লার্নার লাইসেন্সের আবেদন করা যায়।'
+            },
+            {
+                id: 69, category: 'RULES', signCode: null,
+                qBn: 'গিয়ারযুক্ত মোটরসাইকেল বা প্রাইভেট মোটরগাড়ি (LMV) চালানোর ন্যূনতম বয়স কত?',
+                qEn: 'What is the minimum age for driving a geared motorcycle or Light Motor Vehicle (LMV)?',
+                options: ['১৬ বছর', '১৮ বছর (18 Years)', '২০ বছর', '২১ বছর'],
+                ans: 1,
+                exp: 'সাধারণ রাস্তায় গিয়ারযুক্ত বাইক বা ব্যক্তিগত চার চাকার গাড়ি (LMV) চালানোর জন্য ন্যূনতম বয়স ১৮ বছর হতে হবে।'
+            },
+            {
+                id: 70, category: 'RULES', signCode: null,
+                qBn: 'বাণিজ্যিক বা পরিবহন যানবাহন (Transport Vehicle) চালানোর ন্যূনতম বয়স কত?',
+                qEn: 'What is the minimum age to drive a Commercial/Transport vehicle?',
+                options: ['১৮ বছর', '২০ বছর (20 Years)', '২১ বছর', '২৫ বছর'],
+                ans: 1,
+                exp: 'মোটর ভেহিকেলস আইন অনুযায়ী পরিবহন বা বাণিজ্যিক যানবাহন (Transport Vehicle) চালানোর লাইসেন্স পেতে ন্যূনতম ২০ বছর বয়স হওয়া আবশ্যক।'
+            },
+            {
+                id: 71, category: 'RULES', signCode: null,
+                qBn: 'লার্নার লাইসেন্সধারী ব্যক্তির গাড়ির সামনে ও পিছনে থাকা "L" অক্ষরের রঙ কেমন হওয়া উচিত?',
+                qEn: 'What should be the color scheme of the "L" plate on a learner\'s vehicle?',
+                options: ['কালো পটভূমিতে সাদা "L"', 'সাদা পটভূমিতে লাল রঙের "L" (Red "L" on White background)', 'লাল পটভূমিতে সাদা "L"', 'হলুদ পটভূমিতে কালো "L"'],
+                ans: 1,
+                exp: 'সেন্ট্রাল মোটর ভেহিকেলস রুলস অনুযায়ী, সাদা পটভূমির ওপর স্পষ্ট লাল রঙের "L" অক্ষর (উচ্চতা কমপক্ষে ১০ সেমি) গাড়ির সামনে ও পিছনে লাগাতে হবে।'
+            },
+            {
+                id: 72, category: 'RULES', signCode: null,
+                qBn: 'লার্নার লাইসেন্স নিয়ে মোটরসাইকেল চালানোর সময় পিছনে কাকে বসানো যাবে?',
+                qEn: 'Who is allowed to ride pillion when a Learner\'s Licence holder is riding a motorcycle?',
+                options: ['যেকোনো একজন বন্ধু', 'শুধুমাত্র একজন বৈধ স্থায়ী ড্রাইভিং লাইসেন্সধারী প্রশিক্ষক (Only a permanent licence holder instructor)', 'পরিবারের যেকোনো সদস্য', 'দুজন যাত্রী'],
+                ans: 1,
+                exp: 'লার্নার লাইসেন্সধারী ব্যক্তি কোনো সাধারণ যাত্রী বহন করতে পারবেন না; শুধুমাত্র যাঁর কাছে বৈধ স্থায়ী ড্রাইভিং লাইসেন্স আছে এমন একজন প্রশিক্ষক সাথে বসতে পারবেন।'
+            },
+            {
+                id: 73, category: 'RULES', signCode: null,
+                qBn: 'নতুন ব্যক্তিগত গাড়ির (Private Vehicle) ফিটনেস বা রেজিস্ট্রেশন শংসাপত্র (RC) প্রথমবার কত বছরের জন্য বৈধ থাকে?',
+                qEn: 'For how many years is the Registration Certificate (RC) of a new private motor vehicle initially valid?',
+                options: ['৫ বছর', '১০ বছর', '১৫ বছর (15 Years)', '২০ বছর'],
+                ans: 2,
+                exp: 'নতুন ব্যক্তিগত (Non-Transport) মোটরগাড়ি বা বাইকের রেজিস্ট্রেশন শংসাপত্র প্রথম ১৫ বছরের জন্য বৈধ থাকে এবং এরপর প্রতি ৫ বছর অন্তর নবীকরণ করতে হয়।'
+            },
+            {
+                id: 74, category: 'RULES', signCode: null,
+                qBn: 'দূষণ নিয়ন্ত্রণ শংসাপত্র (PUCC - Pollution Under Control Certificate)-এর সাধারণ মেয়াদ কত মাস (BS-IV/VI গাড়ির ক্ষেত্রে সর্বোচ্চ)?',
+                qEn: 'What is the standard validity period of a Pollution Under Control (PUC) certificate?',
+                options: ['৩ মাস', '৬ মাস বা ১ বছর (6 Months / 1 Year depending on emission norm)', '৩ বছর', '৫ বছর'],
+                ans: 1,
+                exp: 'নতুন গাড়ি এবং BS-IV/BS-VI মানের গাড়ির ক্ষেত্রে PUCC ১ বছর এবং পুরনো গাড়ির ক্ষেত্রে ৬ মাস বৈধ থাকে।'
+            },
+            {
+                id: 75, category: 'RULES', signCode: null,
+                qBn: 'ভারতে রক্তে অ্যালকোহলের সর্বোচ্চ অনুমোদিত মাত্রা (BAC Limit) কত, যার বেশি হলে তা দণ্ডনীয় অপরাধ?',
+                qEn: 'What is the legal Blood Alcohol Concentration (BAC) limit under Section 185 of the MV Act?',
+                options: ['প্রতি ১০০ মিলি রক্তে ৩০ মিলিগ্রাম (30 mg per 100 ml of blood)', 'প্রতি ১০০ মিলি রক্তে ৫০ মিলিগ্রাম', 'প্রতি ১০০ মিলি রক্তে ৮০ মিলিগ্রাম', 'প্রতি ১০০ মিলি রক্তে ১০০ মিলিগ্রাম'],
+                ans: 0,
+                exp: 'মোটর ভেহিকেলস আইনের ১৮৫ ধারা অনুযায়ী, প্রতি ১০০ মিলি রক্তে ৩০ মিলিগ্রামের বেশি অ্যালকোহল পাওয়া গেলে তা মদ্যপ অবস্থায় গাড়ি চালানো (Drunken Driving) হিসেবে গণ্য হয়।'
+            },
+            {
+                id: 76, category: 'RULES', signCode: null,
+                qBn: 'কোনো রাস্তায় সামনের গাড়িকে ওভারটেক করার সঠিক নিয়ম কী?',
+                qEn: 'From which side should you normally overtake a vehicle moving ahead?',
+                options: ['বাম দিক দিয়ে', 'সামনের গাড়ির ডান দিক দিয়ে (From the right side of the vehicle ahead)', 'যেদিকে ফাঁকা পাওয়া যাবে', 'ফুটপাত দিয়ে'],
+                ans: 1,
+                exp: 'ভারতে বাম দিক ঘেঁষে গাড়ি চালানোর নিয়ম, তাই সামনের গাড়িকে সবসময় তার ডান দিক দিয়ে ওভারটেক করতে হয় (যদি না সামনের গাড়িটি নিজেই ডান দিকে মোড় নেওয়ার সংকেত দেয়)।'
+            },
+            {
+                id: 77, category: 'RULES', signCode: null,
+                qBn: 'কখন সামনের গাড়িকে বাম দিক দিয়ে ওভারটেক করার অনুমতি দেওয়া হয়?',
+                qEn: 'When is overtaking from the left side permitted?',
+                options: ['কখনোই না', 'যখন সামনের গাড়িটি ডান দিকে মোড় নেওয়ার সংকেত দিয়ে রাস্তার মাঝখানে অবস্থান করে', 'যখন আপনি তাড়াহুড়োয় থাকেন', 'রাতের বেলায়'],
+                ans: 1,
+                exp: 'যখন সামনের গাড়ির চালক ডান দিকে মোড় নেওয়ার ইন্ডিকেটর বা হাতের সংকেত দিয়ে ডান দিকে সরে যান, তখন তার বাম দিক দিয়ে অতিক্রম করা যায়।'
+            },
+            {
+                id: 78, category: 'RULES', signCode: null,
+                qBn: 'পাহাড়ি বা ঢালু রাস্তায় (Steep Hill Road) মুখোমুখি দুটি গাড়ি এলে কোন গাড়িটিকে আগে যাওয়ার অগ্রাধিকার (Right of Way) দিতে হবে?',
+                qEn: 'On a narrow steep mountain road, which vehicle has the right of way?',
+                options: ['যে গাড়িটি নিচের দিকে নামছে', 'যে গাড়িটি উপরের দিকে বা চড়াইয়ে উঠছে (Vehicle going uphill)', 'যে গাড়িটি আকারে ছোট', 'যে গাড়িটি আগে হর্ন বাজাবে'],
+                ans: 1,
+                exp: 'পাহাড়ি রাস্তায় যে গাড়িটি উপরের দিকে উঠছে (Uphill) তাকে আগে যাওয়ার অগ্রাধিকার দিতে হবে, কারণ চড়াইয়ে থামলে গাড়িটি পুনরায় চালু করা কঠিন ও ঝুঁকিপূর্ণ।'
+            },
+            {
+                id: 79, category: 'RULES', signCode: null,
+                qBn: 'গোলচত্বরে (Roundabout) প্রবেশের সময় কোন দিকের যানবাহনকে অগ্রাধিকার দিতে হবে?',
+                qEn: 'While entering a roundabout, which traffic has the right of way?',
+                options: ['আপনার বাম দিকের যানবাহন', 'আপনার ডান দিক থেকে আসা বা গোলচত্বরে ইতিমধ্যে থাকা যানবাহন (Traffic from the right)', 'পিছনের যানবাহন', 'যে গাড়িটি সবচেয়ে দ্রুত চলছে'],
+                ans: 1,
+                exp: 'গোলচত্বরে প্রবেশের সময় ডান দিক থেকে আসা বা ইতিমধ্যে গোলচত্বরে ঘূর্ণায়মান যানবাহনকে আগে যাওয়ার সুযোগ দিতে হবে।'
+            },
+            {
+                id: 80, category: 'RULES', signCode: null,
+                qBn: 'ট্রাফিক সিগন্যালে হলুদ (Amber) আলো জ্বললে চালকের কী করা উচিত?',
+                qEn: 'What does a steady amber (yellow) light at a traffic signal indicate?',
+                options: ['গতি বাড়িয়ে দ্রুত পার হয়ে যাওয়া', 'স্টপ লাইনের আগে থামতে হবে; তবে ইতিমধ্যে লাইন পার হয়ে গেলে সাবধানে মোড় খালি করতে হবে', 'ইঞ্জিন বন্ধ করে দেওয়া', 'অবিলম্বে ইউ-টার্ন নেওয়া'],
+                ans: 1,
+                exp: 'হলুদ আলো মানে লাল আলো জ্বলতে চলেছে। গাড়ি যদি স্টপ লাইনের আগে থাকে তবে অবশ্যই থামতে হবে।'
+            },
+            {
+                id: 81, category: 'RULES', signCode: null,
+                qBn: 'ট্রাফিক সিগন্যালে অনবরত মিটমিট করা লাল আলো (Flashing Red Light) কী নির্দেশ করে?',
+                qEn: 'What does a flashing red traffic light mean?',
+                options: ['গতি কমিয়ে না থেমে চলে যান', 'স্টপ লাইনের আগে সম্পূর্ণ থামুন এবং রাস্তা নিরাপদ হলে তবেই এগোন (Stop completely, then proceed when safe)', 'সিগন্যাল খারাপ হয়ে গেছে', 'রাস্তা সম্পূর্ণ বন্ধ'],
+                ans: 1,
+                exp: 'ফ্ল্যাশিং রেড লাইট "STOP" চিহ্নের মতো কাজ করে—চালককে একবার সম্পূর্ণ থামতে হবে, ডানে-বামে দেখে নিরাপদ হলে এগোতে হবে।'
+            },
+            {
+                id: 82, category: 'RULES', signCode: null,
+                qBn: 'ট্রাফিক সিগন্যালে মিটমিট করা হলুদ আলো (Flashing Yellow/Amber Light) কী নির্দেশ করে?',
+                qEn: 'What does a flashing yellow (amber) light at an intersection mean?',
+                options: ['অবিলম্বে থামুন', 'গতি কমান এবং অত্যন্ত সতর্কতার সাথে এগিয়ে যান (Slow down and proceed with caution)', 'দ্রুত রাস্তা পার হোন', 'পুলিশ চেকিং চলছে'],
+                ans: 1,
+                exp: 'মিটমিট করা হলুদ আলোর অর্থ হলো গাড়ির গতি কমিয়ে চারপাশ দেখে সাবধানে সংযোগস্থল পার হওয়া।'
+            },
+            {
+                id: 83, category: 'RULES', signCode: null,
+                qBn: 'রাস্তার মাঝখানে একটি অবিচ্ছিন্ন সাদা বা হলুদ লম্বা রেখা (Continuous Single Solid Line) থাকলে তার অর্থ কী?',
+                qEn: 'What does a continuous solid white or yellow line in the middle of the road mean?',
+                options: ['ইচ্ছেমতো ওভারটেক করা যাবে', 'রেখাটি অতিক্রম করা বা ওভারটেকিং করা নিষেধ, যদি না সামনে কোনো বাধা থাকে', 'রাস্তার ঠিক মাঝখানে গাড়ি চালাতে হবে', 'শুধুমাত্র ভিআইপি গাড়ির লেন'],
+                ans: 1,
+                exp: 'অবিচ্ছিন্ন সলিড লাইন নির্দেশ করে যে নিজের লেন ছেড়ে ওই রেখা পার হয়ে ওভারটেক করা বিপজ্জনক ও নিষিদ্ধ।'
+            },
+            {
+                id: 84, category: 'RULES', signCode: null,
+                qBn: 'রাস্তার মাঝখানে কাটা কাটা বা ভাঙা সাদা রেখা (Broken White Line) কী নির্দেশ করে?',
+                qEn: 'What does a broken white line in the center of the road indicate?',
+                options: ['ওভারটেকিং সম্পূর্ণ নিষেধ', 'নিরাপদ থাকলে লেন পরিবর্তন বা ওভারটেক করা যেতে পারে (May overtake if safe)', 'রাস্তা শেষ', 'পার্কিং জোন'],
+                ans: 1,
+                exp: 'ভাঙা বা ড্যাশড সাদা রেখা থাকলে বিপরীত দিক থেকে কোনো গাড়ি না এলে সতর্কতার সাথে ওভারটেক বা লেন পরিবর্তন করা যায়।'
+            },
+            {
+                id: 85, category: 'RULES', signCode: null,
+                qBn: 'চালক যদি ডান হাত গাড়ির বাইরে সোজা অনুভূমিকভাবে বাড়িয়ে হাতের তালু সামনের দিকে রাখেন, তবে সেই হ্যান্ড সিগন্যালের অর্থ কী?',
+                qEn: 'What does it mean when a driver extends the right arm horizontally with the palm facing forward?',
+                options: ['গাড়ির গতি কমানো হচ্ছে', 'ডান দিকে মোড় নেওয়ার ইচ্ছা (Intention to turn right)', 'বাম দিকে মোড় নেওয়ার ইচ্ছা', 'পিছনের গাড়িকে ওভারটেক করতে বলা হচ্ছে'],
+                ans: 1,
+                exp: 'ডান হাত সোজা বাইরের দিকে বের করে তালু সামনে রাখা হলো "ডান দিকে মোড় নেওয়ার" (Turning Right) প্রমিত হাতের সংকেত।'
+            },
+            {
+                id: 86, category: 'RULES', signCode: null,
+                qBn: 'চালক ডান হাত বাইরে বের করে ঘড়ির কাঁটার বিপরীত দিকে (Anti-clockwise) ঘোরালে তার অর্থ কী?',
+                qEn: 'What does rotating the extended right arm in an anti-clockwise direction indicate?',
+                options: ['ডান দিকে মোড় নেবে', 'বাম দিকে মোড় নেওয়ার ইচ্ছা (Intention to turn left)', 'গাড়ি থামাবে', 'গাড়ি পিছনে নেবে'],
+                ans: 1,
+                exp: 'ডান হাত বের করে বৃত্তাকারে (Anti-clockwise) ঘোরানো হলো "বাম দিকে মোড় নেওয়ার" (Turning Left) হাতের সংকেত।'
+            },
+            {
+                id: 87, category: 'RULES', signCode: null,
+                qBn: 'চালক ডান হাত বাইরে বের করে কনুই ভাঁজ করে হাত খাড়া উপরের দিকে তুলে ধরলে তার অর্থ কী?',
+                qEn: 'What does extending the right arm with the forearm raised vertically upward mean?',
+                options: ['ডান দিকে মোড় নেবে', 'গাড়ি থামানোর ইচ্ছা (Intention to STOP)', 'বাম দিকে মোড় নেবে', 'রাস্তা পরিষ্কার আছে'],
+                ans: 1,
+                exp: 'ডান হাতের কনুই ৯০ ডিগ্রি ভাঁজ করে হাত উপরের দিকে তোলা মানে চালক গাড়ি "থামাতে" (Stop) চলেছেন।'
+            },
+            {
+                id: 88, category: 'RULES', signCode: null,
+                qBn: 'চালক ডান হাত বাইরে বের করে হাতের তালু নিচের দিকে রেখে উপরে-নিচে নাড়ালে তার অর্থ কী?',
+                qEn: 'What does moving the extended right arm up and down with palm facing downward mean?',
+                options: ['গতি বাড়ানো হচ্ছে', 'গাড়ির গতি কমানো হচ্ছে (Slowing down the vehicle)', 'ওভারটেক করার অনুরোধ', 'ইমার্জেন্সি সাহায্য চাই'],
+                ans: 1,
+                exp: 'হাত উপরে-নিচে নাড়ানোর সংকেতটির অর্থ হলো চালক গাড়ির গতি কমাচ্ছেন (Slowing down)।'
+            },
+            {
+                id: 89, category: 'RULES', signCode: null,
+                qBn: 'কোন কোন জরুরি যানবাহনকে (Emergency Vehicles) সাইরেন বাজানো অবস্থায় নির্বিঘ্নে যাওয়ার জন্য অবিলম্বে রাস্তা ছেড়ে দিতে হয়?',
+                qEn: 'Which vehicles must be given free passage immediately when their siren/flasher is on?',
+                options: ['স্কুল বাস ও ট্যাক্সি', 'অ্যাম্বুলেন্স এবং দমকলের গাড়ি (Ambulance and Fire Service vehicles)', 'পণ্যবাহী ট্রাক', 'ট্যুরিস্ট বাস'],
+                ans: 1,
+                exp: 'মোটর ভেহিকেলস আইনের ১৯৪ই (194E) ধারা অনুযায়ী, অ্যাম্বুলেন্স, দমকল বা জরুরি পরিষেবার গাড়িকে বাম দিকে সরে গিয়ে অবিলম্বে রাস্তা ছেড়ে দেওয়া বাধ্যতামূলক।'
+            },
+            {
+                id: 90, category: 'RULES', signCode: null,
+                qBn: 'গাড়ি চালানোর সময় কোন ধরনের ফগ ল্যাম্প (Fog Lamp) কখন ব্যবহার করা উচিত?',
+                qEn: 'When should fog lamps on a motor vehicle be used?',
+                options: ['রাতের বেলা সবসময়', 'যখন ঘন কুয়াশা বা তুষারপাতের কারণে দৃশ্যমানতা কমে যায় (Only when there is mist or fog)', 'বিপরীত দিকের চালককে সতর্ক করতে', 'দিনের বেলায় হাইওয়েতে'],
+                ans: 1,
+                exp: 'ফগ ল্যাম্প শুধুমাত্র কুয়াশা, ধোঁয়াশা বা প্রবল বৃষ্টিতে যখন সামনের রাস্তা স্পষ্ট দেখা যায় না তখনই ব্যবহার করা উচিত।'
+            },
+            {
+                id: 91, category: 'RULES', signCode: null,
+                qBn: 'রাতের বেলা শহরাঞ্চলে বা বিপরীত দিক থেকে অন্য গাড়ি এলে হেডলাইটের বিম কেমন রাখা উচিত?',
+                qEn: 'How should headlights be used at night when approaching oncoming traffic or driving in well-lit city roads?',
+                options: ['হাই বিম (High Beam)', 'লো বিম বা ডিপার (Low / Dipped Beam)', 'হেডলাইট সম্পূর্ণ বন্ধ রাখা', 'হ্যাজার্ড লাইট জ্বালিয়ে রাখা'],
+                ans: 1,
+                exp: 'বিপরীত দিকের চালকের চোখ যাতে ধাঁধিয়ে না যায়, সেজন্য লো বিম (Low/Dipped Beam) ব্যবহার করা বাধ্যতামূলক।'
+            },
+            {
+                id: 92, category: 'RULES', signCode: null,
+                qBn: 'জেব্রা ক্রসিংয়ে (Zebra Crossing) পথচারীরা রাস্তা পার হওয়ার জন্য অপেক্ষা করলে চালকের করণীয় কী?',
+                qEn: 'What must a driver do when pedestrians are waiting to cross at a Zebra Crossing?',
+                options: ['হর্ন বাজিয়ে দ্রুত চলে যাওয়া', 'গাড়ি থামিয়ে পথচারীদের আগে রাস্তা পার হতে দেওয়া (Stop the vehicle and let pedestrians cross first)', 'পথচারীদের পাশ কাটিয়ে চলে যাওয়া', 'হেডলাইট জ্বালানো'],
+                ans: 1,
+                exp: 'জেব্রা ক্রসিংয়ে পথচারীদের সর্বদা প্রথম অগ্রাধিকার রয়েছে; চালককে স্টপ লাইনের আগে গাড়ি থামাতে হবে।'
+            },
+            {
+                id: 93, category: 'RULES', signCode: null,
+                qBn: 'গাড়ি চালানোর সময় সঙ্গে কোন কোন নথিপত্র (বা DigiLocker/mParivahan-এ ডিজিটাল কপি) রাখা আইনত বাধ্যতামূলক?',
+                qEn: 'Which documents must a driver carry (physically or digitally via DigiLocker/mParivahan) while driving?',
+                options: ['আধার কার্ড ও ভোটার কার্ড', 'ড্রাইভিং লাইসেন্স, রেজিস্ট্রেশন সার্টিফিকেট (RC), বিমা (Insurance) এবং দূষণ শংসাপত্র (PUCC)', 'শুধুমাত্র গাড়ির চাবি ও প্যান কার্ড', 'ব্যাংকের পাসবই'],
+                ans: 1,
+                exp: 'বৈধ ড্রাইভিং লাইসেন্স (DL), গাড়ির RC, বৈধ থার্ড-পার্টি বিমা (Insurance) এবং বৈধ PUCC শংসাপত্র সঙ্গে রাখা বাধ্যতামূলক।'
+            },
+            {
+                id: 94, category: 'RULES', signCode: null,
+                qBn: 'পাবলিক প্লেসে বা রাস্তায় গাড়ি চালানোর জন্য ন্যূনতম কোন ধরনের বিমা (Insurance) থাকা আইনত বাধ্যতামূলক?',
+                qEn: 'Which type of motor insurance is mandatory by law to drive on Indian roads?',
+                options: ['জীবন বিমা', 'থার্ড-পার্টি বিমা (Third-Party Liability Insurance)', 'হোম ইনস্যুরেন্স', 'কোনো বিমার প্রয়োজন নেই'],
+                ans: 1,
+                exp: 'মোটর ভেহিকেলস আইনের ১৪৬ ধারা অনুযায়ী, কমপক্ষে বৈধ থার্ড-পার্টি বিমা (Third-Party Insurance) ছাড়া রাস্তায় গাড়ি চালানো দণ্ডনীয় অপরাধ।'
+            },
+            {
+                id: 95, category: 'RULES', signCode: null,
+                qBn: 'দুই চাকার মোটরসাইকেল বা স্কুটারে চালকসহ সর্বোচ্চ কতজন মানুষ বসতে পারেন এবং হেলমেট পরার নিয়ম কী?',
+                qEn: 'What is the maximum seating capacity and helmet rule for a two-wheeler?',
+                options: ['৩ জন, শুধুমাত্র চালকের হেলমেট', 'সর্বোচ্চ ২ জন (চালক ও ১ জন আরোহী) এবং উভয়েরই ISI মার্কযুক্ত হেলমেট পরা বাধ্যতামূলক', '২ জন, পিছনের আরোহীর হেলমেট ঐচ্ছিক', 'যতজন বসা সম্ভব'],
+                ans: 1,
+                exp: 'ধারা ১২৮ ও ১২৯ অনুযায়ী, বাইকে চালকসহ সর্বোচ্চ ২ জন বসতে পারবেন এবং চালক ও পিছনের আরোহী (Pillion Rider) উভয়েরই BIS/ISI মানের হেলমেট পরা বাধ্যতামূলক।'
+            },
+            {
+                id: 96, category: 'RULES', signCode: null,
+                qBn: 'গাড়ি চালানোর সময় মোবাইল ফোনে কথা বলা কি অনুমোদিত?',
+                qEn: 'Is using a handheld mobile phone allowed while driving a vehicle?',
+                options: ['কম গতিতে চালালে অনুমোদিত', 'না, এটি আইনত দণ্ডনীয় অপরাধ এবং দুর্ঘটনার প্রধান কারণ (Strictly prohibited under MV Act)', 'শুধুমাত্র ট্রাফিক সিগন্যালে অনুমোদিত', 'ইয়ারফোন থাকলে মেসেজ টাইপ করা যাবে'],
+                ans: 1,
+                exp: 'গাড়ি বা বাইক চালানোর সময় মোবাইল ফোন ব্যবহার করা বিপজ্জনক এবং মোটর ভেহিকেলস আইনের ১৮৪ ধারার অধীনে জরিমানাযোগ্য অপরাধ।'
+            },
+            {
+                id: 97, category: 'RULES', signCode: null,
+                qBn: 'কোনো বিকল গাড়িকে অন্য গাড়ি দিয়ে টেনে (Towing) নিয়ে যাওয়ার সময় দুটি গাড়ির মধ্যে সর্বোচ্চ দূরত্ব কত হওয়া উচিত এবং গতিসীমা কত?',
+                qEn: 'What is the maximum permissible distance between two vehicles during towing?',
+                options: ['১০ মিটার', '৫ মিটারের বেশি নয় (Not more than 5 meters) এবং গতি ঘণ্টায় ২৪-২৫ কিমির মধ্যে', '১৫ মিটার', '১ মিটার'],
+                ans: 1,
+                exp: 'টোয়িং করার সময় দুটি গাড়ির মধ্যবর্তী দড়ি বা চেনের দূরত্ব ৫ মিটারের বেশি হওয়া চলবে না এবং মাঝখানে লাল পতাকা বা কাপড় বাঁধা উচিত।'
+            },
+            {
+                id: 98, category: 'RULES', signCode: null,
+                qBn: 'নিচের কোন স্থানে গাড়ি পার্কিং করা বা থামানো সম্পূর্ণ নিষিদ্ধ?',
+                qEn: 'Where is parking a vehicle strictly prohibited?',
+                options: ['নির্ধারিত পার্কিং লটে', 'রাস্তার মোড়, সেতুর ওপর, সুড়ঙ্গের ভেতর, ফুটপাত ও জেব্রা ক্রসিংয়ের ওপর', 'নিজের বাড়ির গ্যারেজে', 'শপিং মলের পার্কিংয়ে'],
+                ans: 1,
+                exp: 'রাস্তার বাঁক বা মোড়, সেতু, টানেল, জেব্রা ক্রসিং, হাসপাতাল বা ফায়ার ব্রিগেডের গেটের সামনে গাড়ি পার্ক করা সম্পূর্ণ বেআইনি।'
+            },
+            {
+                id: 99, category: 'RULES', signCode: null,
+                qBn: 'হ্যাজার্ড ওয়ার্নিং লাইট (Hazard Warning Lights - চারটি ইন্ডিকেটর একসাথে জ্বলা) কখন ব্যবহার করা উচিত?',
+                qEn: 'When should the Hazard Warning Lights of a vehicle be switched on?',
+                options: ['বৃষ্টির মধ্যে দ্রুত গাড়ি চালানোর সময়', 'যখন গাড়িটি বিকল হয়ে রাস্তার পাশে দাঁড়িয়ে থাকে বা জরুরি বিপত্তির সৃষ্টি করে', 'সোজা রাস্তা পার হওয়ার সময়', 'ওভারটেক করার সময়'],
+                ans: 1,
+                exp: 'হ্যাজার্ড লাইট কখনোই সোজা যাওয়ার সংকেত নয়; শুধুমাত্র গাড়ি বিকল হয়ে থেমে থাকলে বা জরুরি বিপদ জানাতে এটি ব্যবহৃত হয়।'
+            },
+            {
+                id: 100, category: 'RULES', signCode: null,
+                qBn: 'অরক্ষিত রেলওয়ে লেভেল ক্রসিং (Unguarded Railway Crossing) পার হওয়ার আগে চালকের কী করা বাধ্যতামূলক?',
+                qEn: 'What is the mandatory duty of a driver before crossing an unguarded railway level crossing?',
+                options: ['হর্ন বাজিয়ে দ্রুত গতিতে লাইন পার হওয়া', 'রেললাইনের আগে বাম পাশে গাড়ি থামানো, নিচে নেমে বা ভালোভাবে ডানে-বামে ট্রেন আসছে কি না নিশ্চিত হয়ে পার হওয়া', 'শুধু লুকিং গ্লাস দেখে পার হওয়া', 'হেডলাইট অফ করে পার হওয়া'],
+                ans: 1,
+                exp: 'মোটর ভেহিকেলস আইনের ১৩১ ধারা অনুযায়ী, অরক্ষিত রেলক্রসিংয়ে গাড়ি থামিয়ে উভয় দিকে কোনো ট্রেন আসছে কি না তা সশরীরে নিশ্চিত না হয়ে লাইন পার হওয়া যাবে না।'
+            }
+        ];
+
+        // Bengali Numeral Helper
+        const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+        function toBnNum(num) {
+            return String(num).split('').map(c => (c >= '0' && c <= '9') ? bnDigits[parseInt(c)] : c).join('');
+        }
+
+        const CATEGORY_LABELS = {
+            'MANDATORY': { bn: 'বাধ্যতামূলক চিহ্ন (Mandatory)', color: 'rose' },
+            'CAUTIONARY': { bn: 'সতর্কতামূলক চিহ্ন (Cautionary)', color: 'amber' },
+            'INFORMATORY': { bn: 'তথ্যমূলক চিহ্ন (Informatory)', color: 'sky' },
+            'RULES': { bn: 'ট্রাফিক নিয়ম ও আইন (Traffic Rules)', color: 'emerald' }
+        };
+
+        // ==========================================
+        // APP STATE & LOCAL STORAGE PERSISTENCE
+        // ==========================================
+        const STORAGE_KEY = 'wb_ll_prep_state_v1';
+        let appState = {
+            theme: 'dark',
+            answered: {},     // { questionId: selectedOptionIndex }
+            bookmarks: [],    // [ questionId, ... ]
+            mockHistory: []   // [ { date, score, total, pct }, ... ]
+        };
+
+        let activeTab = 'practice';
+        let practiceCategory = 'ALL';
+        let practiceSearchQuery = '';
+        let practiceViewMode = 'single'; // 'single' or 'list'
+        let filteredQuestions = [...QUESTIONS_BANK];
+        let currentPracticeIndex = 0;
+
+        // Mock Exam State
+        let mockCountTarget = 20;
+        let mockQuestions = [];
+        let mockCurrentIdx = 0;
+        let mockUserAnswers = [];
+        let mockTimerInterval = null;
+        let mockSecondsLeft = 30;
+
+        // Chart Instances
+        let catBarChartInstance = null;
+        let mockLineChartInstance = null;
+
+        function loadState() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (raw) {
+                    const parsed = JSON.parse(raw);
+                    appState = { ...appState, ...parsed };
+                }
+            } catch (e) {
+                console.warn('Could not read localStorage', e);
+            }
+            applyTheme();
+        }
+
+        function saveState() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+            } catch (e) {
+                console.warn('Could not save localStorage', e);
+            }
+            updateHeaderStats();
+        }
+
+        // ==========================================
+        // THEME MANAGEMENT (LIGHT-DARK SHADE)
+        // ==========================================
+        function applyTheme() {
+            const htmlEl = document.documentElement;
+            const iconEl = document.getElementById('theme-icon');
+            if (appState.theme === 'dark') {
+                htmlEl.classList.add('dark');
+                iconEl.className = 'fa-solid fa-sun text-amber-400';
+            } else {
+                htmlEl.classList.remove('dark');
+                iconEl.className = 'fa-solid fa-moon text-indigo-600';
+            }
+            if (activeTab === 'analytics') {
+                renderAnalyticsCharts();
+            }
+        }
+
+        function toggleTheme() {
+            appState.theme = appState.theme === 'dark' ? 'light' : 'dark';
+            applyTheme();
+            saveState();
+        }
+
+        // ==========================================
+        // TAB NAVIGATION
+        // ==========================================
+        function switchTab(tabId) {
+            activeTab = tabId;
+            ['practice', 'mock', 'signs', 'analytics'].forEach(id => {
+                const section = document.getElementById(`tab-${id}`);
+                const deskBtn = document.getElementById(`nav-${id}`);
+                const mobBtn = document.getElementById(`mob-nav-${id}`);
+                if (id === tabId) {
+                    section.classList.remove('hidden');
+                    if (deskBtn) {
+                        deskBtn.className = 'nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm';
+                    }
+                    if (mobBtn) {
+                        mobBtn.className = 'mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50/80 dark:bg-indigo-950/50 transition-all';
+                    }
+                } else {
+                    section.classList.add('hidden');
+                    if (deskBtn) {
+                        deskBtn.className = 'nav-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white';
+                    }
+                    if (mobBtn) {
+                        mobBtn.className = 'mob-nav-btn min-h-[52px] flex flex-col items-center justify-center rounded-xl text-xs font-semibold text-slate-500 dark:text-slate-400 transition-all';
+                    }
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (tabId === 'practice') {
+                renderPracticeView();
+            } else if (tabId === 'signs') {
+                renderSignsGallery('ALL');
+            } else if (tabId === 'analytics') {
+                renderAnalyticsDashboard();
+            }
+        }
+
+        function updateHeaderStats() {
+            const solvedCount = Object.keys(appState.answered).length;
+            document.getElementById('header-solved-count').textContent = `${toBnNum(solvedCount)}/১০০`;
+            document.getElementById('bookmark-count-pill').textContent = toBnNum(appState.bookmarks.length);
+        }
+
+        // ==========================================
+        // PRACTICE MODE LOGIC
+        // ==========================================
+        function applyPracticeFilters() {
+            filteredQuestions = QUESTIONS_BANK.filter(q => {
+                const matchCat =
+                    practiceCategory === 'ALL' ? true :
+                    practiceCategory === 'BOOKMARKED' ? appState.bookmarks.includes(q.id) :
+                    q.category === practiceCategory;
+
+                const qText = `${q.qBn} ${q.qEn} ${q.signNameBn || ''} ${q.options.join(' ')}`.toLowerCase();
+                const matchSearch = !practiceSearchQuery || qText.includes(practiceSearchQuery.toLowerCase());
+                return matchCat && matchSearch;
+            });
+
+            if (currentPracticeIndex >= filteredQuestions.length) {
+                currentPracticeIndex = 0;
+            }
+        }
+
+        function filterPractice(cat) {
+            practiceCategory = cat;
+            currentPracticeIndex = 0;
+
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.getAttribute('data-cat') === cat) {
+                    btn.className = 'cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-sm';
+                } else {
+                    btn.className = 'cat-pill snap-start shrink-0 min-h-[40px] px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700';
+                }
+            });
+
+            applyPracticeFilters();
+            renderPracticeView();
+        }
+
+        function handleSearchPractice(val) {
+            practiceSearchQuery = val.trim();
+            currentPracticeIndex = 0;
+            applyPracticeFilters();
+            renderPracticeView();
+        }
+
+        function togglePracticeViewMode() {
+            practiceViewMode = practiceViewMode === 'single' ? 'list' : 'single';
+            const label = document.getElementById('view-mode-label');
+            const singleContainer = document.getElementById('practice-single-view');
+            const listContainer = document.getElementById('practice-list-view');
+
+            if (practiceViewMode === 'list') {
+                label.textContent = 'কার্ড ভিউ';
+                singleContainer.classList.add('hidden');
+                listContainer.classList.remove('hidden');
+            } else {
+                label.textContent = 'তালিকা ভিউ';
+                listContainer.classList.add('hidden');
+                singleContainer.classList.remove('hidden');
+            }
+            renderPracticeView();
+        }
+
+        function renderPracticeView() {
+            updateHeaderStats();
+            if (practiceViewMode === 'single') {
+                renderSinglePracticeCard();
+                renderPaletteNavigator();
+            } else {
+                renderListPracticeCards();
+            }
+        }
+
+        function renderSinglePracticeCard() {
+            const container = document.getElementById('pq-options-container');
+            if (filteredQuestions.length === 0) {
+                document.getElementById('pq-question-bn').textContent = 'কোনো প্রশ্ন পাওয়া যায়নি!';
+                document.getElementById('pq-question-en').textContent = 'No matching questions found for this filter.';
+                document.getElementById('pq-sign-wrapper').classList.add('hidden');
+                container.innerHTML = `<div class="p-6 text-center text-sm text-slate-500">অন্য বিভাগ নির্বাচন করুন অথবা সার্চ বক্স পরিষ্কার করুন।</div>`;
+                document.getElementById('pq-explanation-box').classList.add('hidden');
+                return;
+            }
+
+            const q = filteredQuestions[currentPracticeIndex];
+            const catMeta = CATEGORY_LABELS[q.category];
+
+            document.getElementById('pq-number-badge').textContent = `প্রশ্ন #${toBnNum(q.id)} (${toBnNum(currentPracticeIndex + 1)}/${toBnNum(filteredQuestions.length)})`;
+            document.getElementById('pq-category-badge').textContent = catMeta.bn;
+
+            // Bookmark state
+            const bmBtn = document.getElementById('pq-bookmark-btn');
+            const isBookmarked = appState.bookmarks.includes(q.id);
+            bmBtn.innerHTML = isBookmarked ? `<i class="fa-solid fa-bookmark text-amber-500"></i>` : `<i class="fa-regular fa-bookmark"></i>`;
+
+            // Sign SVG
+            const signWrapper = document.getElementById('pq-sign-wrapper');
+            const signSvg = document.getElementById('pq-sign-svg');
+            if (q.signCode) {
+                signWrapper.classList.remove('hidden');
+                signSvg.innerHTML = renderRoadSignSVG(q.signCode);
+            } else {
+                signWrapper.classList.add('hidden');
+                signSvg.innerHTML = '';
+            }
+
+            document.getElementById('pq-question-bn').textContent = q.qBn;
+            document.getElementById('pq-question-en').textContent = q.qEn;
+
+            const userAns = appState.answered[q.id];
+            const isAnswered = userAns !== undefined;
+
+            // Status Badge
+            const statusBadge = document.getElementById('pq-status-badge');
+            if (!isAnswered) {
+                statusBadge.className = 'text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500';
+                statusBadge.textContent = 'উত্তর দেওয়া হয়নি';
+            } else if (userAns === q.ans) {
+                statusBadge.className = 'text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400';
+                statusBadge.innerHTML = '<i class="fa-solid fa-check mr-1"></i> সঠিক উত্তর';
+            } else {
+                statusBadge.className = 'text-xs font-bold px-2.5 py-1 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400';
+                statusBadge.innerHTML = '<i class="fa-solid fa-xmark mr-1"></i> ভুল উত্তর';
+            }
+
+            // Render 4 Options
+            const optLetters = ['ক', 'খ', 'গ', 'ঘ'];
+            container.innerHTML = q.options.map((optText, idx) => {
+                let btnStyle = 'border-slate-200 dark:border-slate-700/80 bg-slate-50/70 dark:bg-slate-900/60 hover:border-indigo-400 dark:hover:border-indigo-500 text-slate-800 dark:text-slate-200';
+                let badgeStyle = 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+                let trailingIcon = '';
+
+                if (isAnswered) {
+                    if (idx === q.ans) {
+                        btnStyle = 'border-emerald-500 bg-emerald-500/10 text-emerald-950 dark:text-emerald-200 font-semibold';
+                        badgeStyle = 'bg-emerald-500 text-white';
+                        trailingIcon = `<i class="fa-solid fa-circle-check text-emerald-500 text-lg"></i>`;
+                    } else if (idx === userAns && userAns !== q.ans) {
+                        btnStyle = 'border-rose-500 bg-rose-500/10 text-rose-950 dark:text-rose-200';
+                        badgeStyle = 'bg-rose-500 text-white';
+                        trailingIcon = `<i class="fa-solid fa-circle-xmark text-rose-500 text-lg"></i>`;
+                    } else {
+                        btnStyle = 'border-slate-200/60 dark:border-slate-800/60 opacity-60';
+                    }
+                }
+
+                return `
+                    <button onclick="selectPracticeAnswer(${q.id}, ${idx})" class="w-full min-h-[52px] text-left p-3.5 sm:p-4 rounded-2xl border-2 transition-all flex items-center justify-between gap-3 active:scale-[0.99] ${btnStyle}">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 rounded-xl text-sm font-bold flex items-center justify-center shrink-0 ${badgeStyle}">${optLetters[idx]}</span>
+                            <span class="text-sm sm:text-base leading-snug">${optText}</span>
+                        </div>
+                        ${trailingIcon}
+                    </button>
+                `;
+            }).join('');
+
+            // Explanation Box
+            const expBox = document.getElementById('pq-explanation-box');
+            const expText = document.getElementById('pq-explanation-text');
+            if (isAnswered) {
+                expBox.classList.remove('hidden');
+                expText.textContent = q.exp;
+            } else {
+                expBox.classList.add('hidden');
+            }
+
+            // Prev / Next buttons state
+            document.getElementById('pq-prev-btn').disabled = currentPracticeIndex === 0;
+            document.getElementById('pq-next-btn').disabled = currentPracticeIndex === filteredQuestions.length - 1;
+        }
+
+        function selectPracticeAnswer(qId, optIdx) {
+            appState.answered[qId] = optIdx;
+            saveState();
+            renderPracticeView();
+        }
+
+        function revealCurrentAnswer() {
+            if (filteredQuestions.length === 0) return;
+            const q = filteredQuestions[currentPracticeIndex];
+            if (appState.answered[q.id] === undefined) {
+                appState.answered[q.id] = q.ans;
+                saveState();
+            }
+            renderPracticeView();
+        }
+
+        function prevPracticeQuestion() {
+            if (currentPracticeIndex > 0) {
+                currentPracticeIndex--;
+                renderPracticeView();
+            }
+        }
+
+        function nextPracticeQuestion() {
+            if (currentPracticeIndex < filteredQuestions.length - 1) {
+                currentPracticeIndex++;
+                renderPracticeView();
+            }
+        }
+
+        function toggleBookmarkCurrent() {
+            if (filteredQuestions.length === 0) return;
+            const q = filteredQuestions[currentPracticeIndex];
+            toggleBookmarkById(q.id);
+        }
+
+        function toggleBookmarkById(qId) {
+            const idx = appState.bookmarks.indexOf(qId);
+            if (idx === -1) {
+                appState.bookmarks.push(qId);
+            } else {
+                appState.bookmarks.splice(idx, 1);
+            }
+            saveState();
+            if (practiceCategory === 'BOOKMARKED') {
+                applyPracticeFilters();
+            }
+            renderPracticeView();
+        }
+
+        function renderPaletteNavigator() {
+            const grid = document.getElementById('question-palette-grid');
+            const mobGrid = document.getElementById('mobile-palette-grid');
+            document.getElementById('navigator-count-label').textContent = `${toBnNum(filteredQuestions.length)}টি প্রশ্ন`;
+
+            let correctCount = 0;
+            let wrongCount = 0;
+
+            QUESTIONS_BANK.forEach(q => {
+                const a = appState.answered[q.id];
+                if (a !== undefined) {
+                    if (a === q.ans) correctCount++;
+                    else wrongCount++;
+                }
+            });
+
+            document.getElementById('legend-correct').textContent = toBnNum(correctCount);
+            document.getElementById('legend-wrong').textContent = toBnNum(wrongCount);
+
+            const paletteHTML = filteredQuestions.map((q, idx) => {
+                const a = appState.answered[q.id];
+                const isCurrent = idx === currentPracticeIndex;
+                const isBm = appState.bookmarks.includes(q.id);
+
+                let colorCls = 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+                if (a !== undefined) {
+                    colorCls = a === q.ans
+                        ? 'bg-emerald-500 text-white font-bold'
+                        : 'bg-rose-500 text-white font-bold';
+                }
+                const ringCls = isCurrent ? 'ring-2 ring-indigo-600 dark:ring-indigo-400 ring-offset-2 dark:ring-offset-slate-900' : '';
+                const bmDot = isBm ? '<span class="absolute top-0.5 right-0.5 w-2 h-2 rounded-full bg-amber-400"></span>' : '';
+
+                return `
+                    <button onclick="jumpToPracticeIndex(${idx})" class="relative h-10 rounded-xl text-xs font-semibold flex items-center justify-center transition-all ${colorCls} ${ringCls}">
+                        ${toBnNum(q.id)}
+                        ${bmDot}
+                    </button>
+                `;
+            }).join('');
+
+            grid.innerHTML = paletteHTML;
+            if (mobGrid) mobGrid.innerHTML = paletteHTML;
+        }
+
+        function jumpToPracticeIndex(idx) {
+            currentPracticeIndex = idx;
+            closeMobilePaletteDrawer();
+            renderPracticeView();
+        }
+
+        function openMobilePaletteDrawer() {
+            document.getElementById('mobile-palette-drawer').classList.remove('hidden');
+        }
+
+        function closeMobilePaletteDrawer() {
+            document.getElementById('mobile-palette-drawer').classList.add('hidden');
+        }
+
+        function renderListPracticeCards() {
+            const listEl = document.getElementById('practice-list-view');
+            if (filteredQuestions.length === 0) {
+                listEl.innerHTML = `<div class="bg-white dark:bg-slate-850 p-8 rounded-3xl text-center text-slate-500">কোনো প্রশ্ন পাওয়া যায়নি।</div>`;
+                return;
+            }
+            const optLetters = ['ক', 'খ', 'গ', 'ঘ'];
+            listEl.innerHTML = filteredQuestions.map(q => {
+                const userAns = appState.answered[q.id];
+                const isAnswered = userAns !== undefined;
+                const isBm = appState.bookmarks.includes(q.id);
+
+                return `
+                    <div class="bg-white dark:bg-slate-850 rounded-3xl p-5 sm:p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-1 rounded-lg bg-indigo-600 text-white text-xs font-bold">#${toBnNum(q.id)}</span>
+                                <span class="text-xs font-semibold text-slate-500">${CATEGORY_LABELS[q.category].bn}</span>
+                            </div>
+                            <button onclick="toggleBookmarkById(${q.id})" class="text-slate-400 hover:text-amber-500">
+                                <i class="${isBm ? 'fa-solid text-amber-500' : 'fa-regular'} fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 mb-4">
+                            ${q.signCode ? `<div class="w-28 h-28 p-3 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shrink-0 flex items-center justify-center">${renderRoadSignSVG(q.signCode)}</div>` : ''}
+                            <div class="flex-1">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">${q.qBn}</h3>
+                                <p class="text-xs text-slate-500 mb-3">${q.qEn}</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                                    ${q.options.map((opt, idx) => {
+                                        let cls = 'border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900';
+                                        if (isAnswered) {
+                                            if (idx === q.ans) cls = 'border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 font-bold';
+                                            else if (idx === userAns) cls = 'border-rose-500 bg-rose-500/10 text-rose-600';
+                                        }
+                                        return `<button onclick="selectPracticeAnswer(${q.id}, ${idx})" class="text-left p-3 rounded-xl border text-xs sm:text-sm flex items-center gap-2 ${cls}">
+                                            <span class="font-bold">${optLetters[idx]}.</span> <span>${opt}</span>
+                                        </button>`;
+                                    }).join('')}
+                                </div>
+                            </div>
+                        </div>
+                        ${isAnswered ? `<div class="mt-3 p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 text-xs text-slate-700 dark:text-slate-300 border border-indigo-200/60 dark:border-indigo-800/50"><strong>ব্যাখ্যা:</strong> ${q.exp}</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function resetPracticeProgress() {
+            appState.answered = {};
+            saveState();
+            renderPracticeView();
+        }
+
+        // ==========================================
+        // MOCK EXAM ENGINE
+        // ==========================================
+        function selectMockMode(count) {
+            mockCountTarget = count;
+            const c20 = document.getElementById('mock-mode-20');
+            const c100 = document.getElementById('mock-mode-100');
+
+            if (count === 20) {
+                c20.className = 'cursor-pointer p-5 rounded-2xl border-2 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/30 transition-all';
+                c20.querySelector('i').className = 'fa-solid fa-circle-check text-indigo-600 dark:text-indigo-400 text-lg';
+                c100.className = 'cursor-pointer p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700/80 hover:border-indigo-400 transition-all';
+                c100.querySelector('i').className = 'fa-regular fa-circle text-slate-400 text-lg';
+            } else {
+                c100.className = 'cursor-pointer p-5 rounded-2xl border-2 border-indigo-600 bg-indigo-50/40 dark:bg-indigo-950/30 transition-all';
+                c100.querySelector('i').className = 'fa-solid fa-circle-check text-indigo-600 dark:text-indigo-400 text-lg';
+                c20.className = 'cursor-pointer p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700/80 hover:border-indigo-400 transition-all';
+                c20.querySelector('i').className = 'fa-regular fa-circle text-slate-400 text-lg';
+            }
+        }
+
+        function startMockExam() {
+            const shuffled = [...QUESTIONS_BANK].sort(() => Math.random() - 0.5);
+            mockQuestions = shuffled.slice(0, mockCountTarget);
+            mockUserAnswers = new Array(mockQuestions.length).fill(null);
+            mockCurrentIdx = 0;
+
+            document.getElementById('mock-lobby').classList.add('hidden');
+            document.getElementById('mock-result').classList.add('hidden');
+            document.getElementById('mock-active').classList.remove('hidden');
+
+            renderMockQuestion();
+        }
+
+        function startQuestionTimer() {
+            clearInterval(mockTimerInterval);
+            mockSecondsLeft = 30;
+            updateMockTimerUI();
+
+            mockTimerInterval = setInterval(() => {
+                mockSecondsLeft--;
+                updateMockTimerUI();
+                if (mockSecondsLeft <= 0) {
+                    clearInterval(mockTimerInterval);
+                    nextMockQuestion();
+                }
+            }, 1000);
+        }
+
+        function updateMockTimerUI() {
+            const badge = document.getElementById('mock-timer-badge');
+            const text = document.getElementById('mock-timer-text');
+            text.textContent = `${toBnNum(mockSecondsLeft)} সেকেন্ড`;
+
+            if (mockSecondsLeft <= 10) {
+                badge.className = 'timer-warning flex items-center gap-2 px-4 py-1.5 rounded-xl bg-rose-500/15 border border-rose-500/40 text-rose-600 dark:text-rose-400 font-bold text-sm';
+            } else {
+                badge.className = 'flex items-center gap-2 px-4 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-bold text-sm';
+            }
+        }
+
+        function renderMockQuestion() {
+            const q = mockQuestions[mockCurrentIdx];
+            const total = mockQuestions.length;
+
+            document.getElementById('mock-q-counter').textContent = `প্রশ্ন ${toBnNum(mockCurrentIdx + 1)} / ${toBnNum(total)}`;
+            document.getElementById('mock-cat-badge').textContent = CATEGORY_LABELS[q.category].bn;
+            document.getElementById('mock-progress-bar').style.width = `${((mockCurrentIdx + 1) / total) * 100}%`;
+
+            const signWrap = document.getElementById('mock-sign-wrapper');
+            const signSvg = document.getElementById('mock-sign-svg');
+            if (q.signCode) {
+                signWrap.classList.remove('hidden');
+                signSvg.innerHTML = renderRoadSignSVG(q.signCode);
+            } else {
+                signWrap.classList.add('hidden');
+            }
+
+            document.getElementById('mock-q-bn').textContent = q.qBn;
+            document.getElementById('mock-q-en').textContent = q.qEn;
+
+            const selected = mockUserAnswers[mockCurrentIdx];
+            const optLetters = ['ক', 'খ', 'গ', 'ঘ'];
+
+            document.getElementById('mock-options-list').innerHTML = q.options.map((opt, idx) => {
+                const isSel = selected === idx;
+                const cls = isSel
+                    ? 'border-indigo-600 bg-indigo-600/10 text-indigo-950 dark:text-white font-bold'
+                    : 'border-slate-200 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/60 hover:border-indigo-400';
+                const badge = isSel ? 'bg-indigo-600 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+
+                return `
+                    <button onclick="selectMockOption(${idx})" class="w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-3.5 ${cls}">
+                        <span class="w-8 h-8 rounded-xl text-sm font-bold flex items-center justify-center shrink-0 ${badge}">${optLetters[idx]}</span>
+                        <span class="text-sm sm:text-base">${opt}</span>
+                    </button>
+                `;
+            }).join('');
+
+            const nextBtn = document.getElementById('mock-next-btn');
+            if (mockCurrentIdx === total - 1) {
+                nextBtn.innerHTML = `<span>পরীক্ষা সম্পন্ন করুন</span> <i class="fa-solid fa-flag-checkered"></i>`;
+            } else {
+                nextBtn.innerHTML = `<span>পরবর্তী প্রশ্ন</span> <i class="fa-solid fa-arrow-right"></i>`;
+            }
+
+            startQuestionTimer();
+        }
+
+        function selectMockOption(optIdx) {
+            mockUserAnswers[mockCurrentIdx] = optIdx;
+            // Also record in practice progress
+            const q = mockQuestions[mockCurrentIdx];
+            appState.answered[q.id] = optIdx;
+            saveState();
+
+            // Update visual highlight without resetting timer
+            const optLetters = ['ক', 'খ', 'গ', 'ঘ'];
+            document.getElementById('mock-options-list').innerHTML = q.options.map((opt, idx) => {
+                const isSel = optIdx === idx;
+                const cls = isSel
+                    ? 'border-indigo-600 bg-indigo-600/10 text-indigo-950 dark:text-white font-bold'
+                    : 'border-slate-200 dark:border-slate-700 bg-slate-50/70 dark:bg-slate-900/60 hover:border-indigo-400';
+                const badge = isSel ? 'bg-indigo-600 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+
+                return `
+                    <button onclick="selectMockOption(${idx})" class="w-full text-left p-4 rounded-2xl border-2 transition-all flex items-center gap-3.5 ${cls}">
+                        <span class="w-8 h-8 rounded-xl text-sm font-bold flex items-center justify-center shrink-0 ${badge}">${optLetters[idx]}</span>
+                        <span class="text-sm sm:text-base">${opt}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function nextMockQuestion() {
+            if (mockCurrentIdx < mockQuestions.length - 1) {
+                mockCurrentIdx++;
+                renderMockQuestion();
+            } else {
+                finishMockExam();
+            }
+        }
+
+        function finishMockExam() {
+            clearInterval(mockTimerInterval);
+            document.getElementById('mock-active').classList.add('hidden');
+            document.getElementById('mock-result').classList.remove('hidden');
+
+            let correct = 0;
+            mockQuestions.forEach((q, i) => {
+                if (mockUserAnswers[i] === q.ans) correct++;
+            });
+
+            const total = mockQuestions.length;
+            const pct = Math.round((correct / total) * 100);
+            const passed = pct >= 60;
+
+            // Save to history
+            appState.mockHistory.push({
+                date: new Date().toLocaleDateString('bn-IN', { day: 'numeric', month: 'short' }),
+                score: correct,
+                total: total,
+                pct: pct
+            });
+            if (appState.mockHistory.length > 12) appState.mockHistory.shift();
+            saveState();
+
+            const badge = document.getElementById('mock-result-badge');
+            const title = document.getElementById('mock-result-title');
+            const sub = document.getElementById('mock-result-subtitle');
+
+            if (passed) {
+                badge.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-4 bg-emerald-500/15 text-emerald-500 border border-emerald-500/30';
+                badge.innerHTML = '<i class="fa-solid fa-award"></i>';
+                title.textContent = 'অভিনন্দন! আপনি মক টেস্টে উত্তীর্ণ হয়েছেন (PASSED)';
+                sub.textContent = 'আপনি সারথি পরিবহন লার্নার লাইসেন্স পরীক্ষার জন্য প্রস্তুত।';
+            } else {
+                badge.className = 'w-20 h-20 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-4 bg-rose-500/15 text-rose-500 border border-rose-500/30';
+                badge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+                title.textContent = 'আরও অনুশীলন প্রয়োজন (NEEDS PRACTICE)';
+                sub.textContent = 'পাস করার জন্য ন্যূনতম ৬০% নম্বর প্রয়োজন। নিচের ভুল উত্তরগুলো পর্যালোচনা করুন।';
+            }
+
+            document.getElementById('res-score').textContent = `${toBnNum(correct)}/${toBnNum(total)}`;
+            document.getElementById('res-percent').textContent = `${toBnNum(pct)}%`;
+            document.getElementById('res-correct').textContent = toBnNum(correct);
+            document.getElementById('res-wrong').textContent = toBnNum(total - correct);
+
+            // Render Detailed Review
+            const reviewList = document.getElementById('mock-review-list');
+            reviewList.innerHTML = mockQuestions.map((q, i) => {
+                const uAns = mockUserAnswers[i];
+                const isCorrect = uAns === q.ans;
+                return `
+                    <div class="p-4 rounded-2xl border ${isCorrect ? 'border-emerald-500/30 bg-emerald-500/5' : 'border-rose-500/30 bg-rose-500/5'} flex flex-col sm:flex-row items-start gap-4">
+                        ${q.signCode ? `<div class="w-20 h-20 p-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shrink-0">${renderRoadSignSVG(q.signCode)}</div>` : ''}
+                        <div class="flex-1 text-sm">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-bold text-indigo-600 dark:text-indigo-400">প্রশ্ন ${toBnNum(i + 1)}:</span>
+                                <span class="font-bold text-slate-900 dark:text-white">${q.qBn}</span>
+                            </div>
+                            <div class="text-xs space-y-1 mt-2">
+                                <div>আপনার উত্তর: <span class="font-semibold ${isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-500'}">${uAns !== null ? q.options[uAns] : 'উত্তর দেওয়া হয়নি'}</span></div>
+                                ${!isCorrect ? `<div>সঠিক উত্তর: <span class="font-bold text-emerald-600 dark:text-emerald-400">${q.options[q.ans]}</span></div>` : ''}
+                                <div class="text-slate-500 dark:text-slate-400 pt-1">${q.exp}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function resetToMockLobby() {
+            clearInterval(mockTimerInterval);
+            document.getElementById('mock-result').classList.add('hidden');
+            document.getElementById('mock-active').classList.add('hidden');
+            document.getElementById('mock-lobby').classList.remove('hidden');
+        }
+
+        // ==========================================
+        // ROAD SIGNS GALLERY
+        // ==========================================
+        function filterSignsGallery(cat) {
+            document.querySelectorAll('.sg-pill').forEach(btn => {
+                if (btn.getAttribute('data-sg') === cat) {
+                    btn.className = 'sg-pill px-3.5 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white';
+                } else {
+                    btn.className = 'sg-pill px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+                }
+            });
+            renderSignsGallery(cat);
+        }
+
+        function renderSignsGallery(cat) {
+            const signQuestions = QUESTIONS_BANK.filter(q => q.signCode && (cat === 'ALL' || q.category === cat));
+            const grid = document.getElementById('signs-gallery-grid');
+
+            grid.innerHTML = signQuestions.map(q => {
+                const badgeColor =
+                    q.category === 'MANDATORY' ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20' :
+                    q.category === 'CAUTIONARY' ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20' :
+                    'bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-500/20';
+
+                const catShort =
+                    q.category === 'MANDATORY' ? 'বাধ্যতামূলক' :
+                    q.category === 'CAUTIONARY' ? 'সতর্কতামূলক' : 'তথ্যমূলক';
+
+                return `
+                    <div onclick="openSignQuestionInPractice(${q.id})" class="cursor-pointer group bg-white dark:bg-slate-850 rounded-3xl p-4 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-500 dark:hover:border-indigo-500 shadow-sm flex flex-col items-center text-center transition-all">
+                        <div class="w-full flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2 py-0.5 rounded-md border ${badgeColor}">${catShort}</span>
+                            <span class="text-[11px] font-bold text-slate-400">#${toBnNum(q.id)}</span>
+                        </div>
+                        <div class="road-sign-box w-24 h-24 my-2 flex items-center justify-center">
+                            ${renderRoadSignSVG(q.signCode)}
+                        </div>
+                        <h4 class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 mt-2 line-clamp-2">${q.signNameBn}</h4>
+                        <span class="text-[11px] text-indigo-600 dark:text-indigo-400 font-semibold mt-2 opacity-80 group-hover:opacity-100">প্রশ্ন দেখুন →</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function openSignQuestionInPractice(qId) {
+            practiceCategory = 'ALL';
+            practiceSearchQuery = '';
+            document.getElementById('practice-search').value = '';
+            filterPractice('ALL');
+            const idx = filteredQuestions.findIndex(q => q.id === qId);
+            if (idx !== -1) currentPracticeIndex = idx;
+            if (practiceViewMode !== 'single') togglePracticeViewMode();
+            switchTab('practice');
+        }
+
+        // ==========================================
+        // PERFORMANCE ANALYTICS DASHBOARD (Chart.js)
+        // ==========================================
+        function renderAnalyticsDashboard() {
+            const answeredIds = Object.keys(appState.answered);
+            const totalAnswered = answeredIds.length;
+            let totalCorrect = 0;
+
+            const catStats = {
+                MANDATORY: { total: 25, attempted: 0, correct: 0 },
+                CAUTIONARY: { total: 25, attempted: 0, correct: 0 },
+                INFORMATORY: { total: 15, attempted: 0, correct: 0 },
+                RULES: { total: 35, attempted: 0, correct: 0 }
+            };
+
+            QUESTIONS_BANK.forEach(q => {
+                const uAns = appState.answered[q.id];
+                if (uAns !== undefined) {
+                    catStats[q.category].attempted++;
+                    if (uAns === q.ans) {
+                        totalCorrect++;
+                        catStats[q.category].correct++;
+                    }
+                }
+            });
+
+            const overallAccuracy = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+
+            document.getElementById('stat-total-practiced').textContent = `${toBnNum(totalAnswered)} / ১০০`;
+            document.getElementById('stat-accuracy-rate').textContent = `${toBnNum(overallAccuracy)}%`;
+            document.getElementById('stat-mock-count').textContent = toBnNum(appState.mockHistory.length);
+            document.getElementById('stat-bookmarked').textContent = toBnNum(appState.bookmarks.length);
+
+            if (appState.mockHistory.length > 0) {
+                const avgMock = Math.round(appState.mockHistory.reduce((acc, m) => acc + m.pct, 0) / appState.mockHistory.length);
+                document.getElementById('stat-mock-pass-label').textContent = `গড় মক স্কোর: ${toBnNum(avgMock)}%`;
+            } else {
+                document.getElementById('stat-mock-pass-label').textContent = 'এখনও কোনো মক টেস্ট দেওয়া হয়নি';
+            }
+
+            // Weakest Category Recommendation
+            let weakestCat = null;
+            let lowestPct = 101;
+            Object.keys(catStats).forEach(cat => {
+                const st = catStats[cat];
+                if (st.attempted > 0) {
+                    const pct = Math.round((st.correct / st.attempted) * 100);
+                    if (pct < lowestPct) {
+                        lowestPct = pct;
+                        weakestCat = cat;
+                    }
+                }
+            });
+
+            const recEl = document.getElementById('study-recommendation-text');
+            if (weakestCat) {
+                recEl.innerHTML = `আপনার <strong>${CATEGORY_LABELS[weakestCat].bn}</strong> বিভাগে সঠিকতার হার সবচেয়ে কম (${toBnNum(lowestPct)}%)। এই বিভাগের প্রশ্নগুলো আরও একবার অনুশীলন করার পরামর্শ দেওয়া হচ্ছে।`;
+            } else {
+                recEl.textContent = 'আপনার দুর্বল বিভাগগুলো চিহ্নিত করতে কমপক্ষে কয়েকটি প্রশ্ন অনুশীলন করুন অথবা একটি মক টেস্ট দিন।';
+            }
+
+            renderAnalyticsCharts(catStats);
+        }
+
+        function renderAnalyticsCharts(catStatsData) {
+            if (!catStatsData) {
+                renderAnalyticsDashboard();
+                return;
+            }
+
+            const isDark = appState.theme === 'dark';
+            const textColor = isDark ? '#cbd5e1' : '#475569';
+            const gridColor = isDark ? 'rgba(148, 163, 184, 0.12)' : 'rgba(148, 163, 184, 0.25)';
+
+            const catPercentages = ['MANDATORY', 'CAUTIONARY', 'INFORMATORY', 'RULES'].map(c => {
+                const st = catStatsData[c];
+                return st.attempted > 0 ? Math.round((st.correct / st.attempted) * 100) : 0;
+            });
+
+            const barCtx = document.getElementById('categoryBarChart').getContext('2d');
+            if (catBarChartInstance) catBarChartInstance.destroy();
+
+            catBarChartInstance = new Chart(barCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['বাধ্যতামূলক চিহ্ন', 'সতর্কতামূলক চিহ্ন', 'তথ্যমূলক চিহ্ন', 'ট্রাফিক নিয়ম'],
+                    datasets: [{
+                        label: 'সঠিকতার হার (%)',
+                        data: catPercentages,
+                        backgroundColor: [
+                            'rgba(244, 63, 94, 0.8)',
+                            'rgba(245, 158, 11, 0.8)',
+                            'rgba(14, 165, 233, 0.8)',
+                            'rgba(16, 185, 129, 0.8)'
+                        ],
+                        borderRadius: 10,
+                        maxBarThickness: 48
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: { color: textColor },
+                            grid: { color: gridColor }
+                        },
+                        x: {
+                            ticks: { color: textColor },
+                            grid: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+            // Mock History Line Chart
+            const lineCtx = document.getElementById('mockHistoryChart').getContext('2d');
+            if (mockLineChartInstance) mockLineChartInstance.destroy();
+
+            const labels = appState.mockHistory.length > 0
+                ? appState.mockHistory.map((m, idx) => `টেস্ট #${toBnNum(idx + 1)}`)
+                : ['টেস্ট #১', 'টেস্ট #২', 'টেস্ট #৩'];
+
+            const dataPoints = appState.mockHistory.length > 0
+                ? appState.mockHistory.map(m => m.pct)
+                : [0, 0, 0];
+
+            mockLineChartInstance = new Chart(lineCtx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'মক টেস্ট স্কোর (%)',
+                        data: dataPoints,
+                        borderColor: '#6366f1',
+                        backgroundColor: 'rgba(99, 102, 241, 0.15)',
+                        fill: true,
+                        tension: 0.35,
+                        pointRadius: 5,
+                        pointBackgroundColor: '#6366f1'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: { color: textColor },
+                            grid: { color: gridColor }
+                        },
+                        x: {
+                            ticks: { color: textColor },
+                            grid: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: { color: textColor }
+                        }
+                    }
+                }
+            });
+        }
+
+        function clearAllStorageData() {
+            appState.answered = {};
+            appState.bookmarks = [];
+            appState.mockHistory = [];
+            saveState();
+            renderAnalyticsDashboard();
+        }
+
+        // Touch Swipe Support for Mobile Single-Card Practice Mode
+        function initTouchSwipe() {
+            const card = document.getElementById('practice-swipe-card');
+            if (!card) return;
+            let touchStartX = 0;
+            let touchStartY = 0;
+
+            card.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+
+            card.addEventListener('touchend', (e) => {
+                const dx = e.changedTouches[0].screenX - touchStartX;
+                const dy = e.changedTouches[0].screenY - touchStartY;
+                if (Math.abs(dx) > 65 && Math.abs(dx) > Math.abs(dy) * 1.8) {
+                    if (dx < 0) nextPracticeQuestion();
+                    else prevPracticeQuestion();
+                }
+            }, { passive: true });
+        }
+
+        // Opera Abstract Waves Animated Background Engine
+        function initOperaWavesBackground() {
+            const canvas = document.getElementById('opera-waves');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            let width, height;
+            let time = 0;
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+
+            window.addEventListener('resize', resize);
+            resize();
+
+            // Configuration for each layered wave ribbon
+            const waves = [
+                { amplitude: 90,  wavelength: 0.0022, speed: 0.015, yOffset: 0.55, opacity: 0.35, color1: '#4f46e5', color2: '#ec4899' },
+                { amplitude: 130, wavelength: 0.0016, speed: 0.010, yOffset: 0.60, opacity: 0.25, color1: '#06b6d4', color2: '#8b5cf6' },
+                { amplitude: 70,  wavelength: 0.0028, speed: 0.020, yOffset: 0.50, opacity: 0.40, color1: '#a855f7', color2: '#3b82f6' },
+                { amplitude: 110, wavelength: 0.0019, speed: 0.012, yOffset: 0.65, opacity: 0.20, color1: '#ec4899', color2: '#6366f1' }
+            ];
+
+            function drawWaves() {
+                ctx.clearRect(0, 0, width, height);
+
+                waves.forEach((wave, index) => {
+                    ctx.save();
+                    ctx.beginPath();
+
+                    // Create horizontal gradient for the wave fill and stroke
+                    const gradient = ctx.createLinearGradient(0, 0, width, height);
+                    gradient.addColorStop(0, wave.color1);
+                    gradient.addColorStop(1, wave.color2);
+
+                    const baseY = height * wave.yOffset;
+                    ctx.moveTo(0, height);
+
+                    // Plot smooth organic wave using combined sine and cosine curves
+                    for (let x = 0; x <= width; x += 5) {
+                        const y = baseY +
+                            Math.sin(x * wave.wavelength + time * wave.speed + index) * wave.amplitude +
+                            Math.cos(x * wave.wavelength * 0.5 - time * wave.speed * 0.8) * (wave.amplitude * 0.4);
+                        ctx.lineTo(x, y);
+                    }
+
+                    ctx.lineTo(width, height);
+                    ctx.closePath();
+
+                    // Fill with translucent gradient
+                    ctx.globalAlpha = wave.opacity;
+                    ctx.fillStyle = gradient;
+                    ctx.fill();
+
+                    // Bright glowing top ridge (signature Opera 3D ribbon edge)
+                    ctx.globalAlpha = wave.opacity * 1.8;
+                    ctx.strokeStyle = gradient;
+                    ctx.lineWidth = 2;
+                    ctx.shadowColor = wave.color2;
+                    ctx.shadowBlur = 20;
+                    ctx.stroke();
+
+                    ctx.restore();
+                });
+
+                time += 1;
+                requestAnimationFrame(drawWaves);
+            }
+
+            drawWaves();
+        }
+
+        // Initialize Application on Load
+        window.onload = function () {
+            loadState();
+            applyPracticeFilters();
+            renderPracticeView();
+            initTouchSwipe();
+            initOperaWavesBackground();
+        };
+    </script>
+</body>
+</html>
